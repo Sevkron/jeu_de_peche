@@ -46,8 +46,10 @@ public class CharacterController : MonoBehaviour {
     public int combustibleNum = 2;
     public Text m_UICombustible;
 
-    private float TorchMovement;
-    private float MinMaxRange;
+    private float TorchMovementV;
+    private float TorchMovementH;
+    private float MinMaxRangeV;
+    private float MinMaxRangeH;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -103,7 +105,7 @@ public class CharacterController : MonoBehaviour {
     }
 
 	void Update () {
-        TorchMovement = 0;
+        TorchMovementV = 0;
         m_animator.SetBool("Grounded", m_isGrounded);
 
         switch(m_controlMode)
@@ -240,32 +242,42 @@ public class CharacterController : MonoBehaviour {
     private void Light()
     {
         float verticalValue;
+        float horizontalValue;
 
-        verticalValue = -Input.GetAxisRaw("Vertical2") * Time.deltaTime; 
-        RotLamp(verticalValue);
+        verticalValue = -Input.GetAxisRaw("Vertical2") * Time.deltaTime;
+        horizontalValue = -Input.GetAxisRaw("Horizontal") * Time.deltaTime;
+        RotLamp(verticalValue, horizontalValue);
     }
 
-    private void RotLamp(float InputValue)
+    private void RotLamp(float InputValueV, float InputValueH)
     {
         
-        TorchMovement += InputValue * 50f;
-        MinMaxRange -= TorchMovement;
+        TorchMovementV += InputValueV * 50f;
+        TorchMovementH += InputValueH * 50f;
+        MinMaxRangeV -= TorchMovementV;
+        MinMaxRangeH -= TorchMovementH;
 
-        if (MinMaxRange < 35 && MinMaxRange > -35)
+        if (MinMaxRangeV < 35 && MinMaxRangeV > -35)
         {
-            m_Lantern.transform.Rotate(new Vector3(0, TorchMovement, 0)); // CHANGER CA SI CA TOURNE PAS CORRECTEMENT // METTRE DANS LA PREMIERE CASE PTDR
+            m_Lantern.transform.Rotate(new Vector3(0, TorchMovementV, 0)); // CHANGER CA SI CA TOURNE PAS CORRECTEMENT // METTRE DANS LA PREMIERE CASE PTDR
         }
         else
         {
-            MinMaxRange += TorchMovement;
+            MinMaxRangeV += TorchMovementV;
+        }
+
+        if (MinMaxRangeH < 35 && MinMaxRangeH > -35)
+        {
+            m_Lantern.transform.Rotate(new Vector3(0, TorchMovementV, 0)); // CHANGER CA SI CA TOURNE PAS CORRECTEMENT // METTRE DANS LA PREMIERE CASE PTDR
+        }
+        else
+        {
+            MinMaxRangeV += TorchMovementV;
         }
     }
 
     public void UpdateCombustibleNum()
     {
         m_UICombustible.text = "" + combustibleNum;
-        //string number = combustibleNum.ToString();
-        //Debug.Log("Updating combustables");
-        //m_UICombustible.text = number;
     }
 }
