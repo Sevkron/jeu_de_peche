@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6252064759343279300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 5323291194812786213, guid: a8bb0b8a5e72b664eafa0f0071aa51a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2243895309742359585}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5087016146554862277}
+  - component: {fileID: 5959698739089296176}
+  - component: {fileID: 5808750487563275277}
+  m_Layer: 0
+  m_Name: Ponton_Sol 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5087016146554862277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 6465863800816349220, guid: a8bb0b8a5e72b664eafa0f0071aa51a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2243895309742359585}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6252064759343279300}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.34, y: -5.4742975, z: 17.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5959698739089296176
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 5590920455614742993, guid: a8bb0b8a5e72b664eafa0f0071aa51a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2243895309742359585}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6252064759343279300}
+  m_Mesh: {fileID: 4300000, guid: 8fca199a5b949d44388ba6c77db9e3b1, type: 3}
+--- !u!23 &5808750487563275277
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 5746374527663015660, guid: a8bb0b8a5e72b664eafa0f0071aa51a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2243895309742359585}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6252064759343279300}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: e144ab9c75ba6044aa2766d8828f7af3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1001 &2243895309742359585
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5323291194812786213, guid: a8bb0b8a5e72b664eafa0f0071aa51a3,
+        type: 3}
+      propertyPath: m_Name
+      value: Ponton_Sol 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465863800816349220, guid: a8bb0b8a5e72b664eafa0f0071aa51a3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465863800816349220, guid: a8bb0b8a5e72b664eafa0f0071aa51a3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.4742975
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465863800816349220, guid: a8bb0b8a5e72b664eafa0f0071aa51a3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465863800816349220, guid: a8bb0b8a5e72b664eafa0f0071aa51a3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465863800816349220, guid: a8bb0b8a5e72b664eafa0f0071aa51a3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465863800816349220, guid: a8bb0b8a5e72b664eafa0f0071aa51a3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465863800816349220, guid: a8bb0b8a5e72b664eafa0f0071aa51a3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465863800816349220, guid: a8bb0b8a5e72b664eafa0f0071aa51a3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465863800816349220, guid: a8bb0b8a5e72b664eafa0f0071aa51a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465863800816349220, guid: a8bb0b8a5e72b664eafa0f0071aa51a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465863800816349220, guid: a8bb0b8a5e72b664eafa0f0071aa51a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a8bb0b8a5e72b664eafa0f0071aa51a3, type: 3}
