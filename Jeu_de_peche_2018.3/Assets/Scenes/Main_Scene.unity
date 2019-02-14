@@ -38,7 +38,8 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0004644634, g: 0.0003975507, b: 0.00010121776, a: 1}
+  m_IndirectSpecularColor: {r: 0.00046493358, g: 0.00039831395, b: 0.00010176936,
+    a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1822,11 +1823,13 @@ Transform:
   m_LocalPosition: {x: 189.70612, y: -1.7572002, z: 136.71353}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 619673100}
   - {fileID: 1810237620}
   - {fileID: 694941739}
   - {fileID: 1319103540}
   - {fileID: 1719689126}
   - {fileID: 1859431361}
+  - {fileID: 1862710020}
   - {fileID: 1338825665}
   - {fileID: 161056617}
   - {fileID: 226146679}
@@ -1849,21 +1852,15 @@ Transform:
   - {fileID: 1706625708}
   - {fileID: 461666408}
   - {fileID: 1124205949}
-  - {fileID: 619673100}
-  - {fileID: 1862710020}
   - {fileID: 509260784}
   - {fileID: 1958275392}
   - {fileID: 415351182}
   - {fileID: 377849462}
-  - {fileID: 1454504202}
-  - {fileID: 125661633}
-  - {fileID: 744327128}
-  - {fileID: 1870826743}
-  - {fileID: 1527824271}
   - {fileID: 104705789}
   - {fileID: 161150806}
-  - {fileID: 2021405576}
+  - {fileID: 125661633}
   - {fileID: 303653548}
+  - {fileID: 2021405576}
   - {fileID: 242237834}
   - {fileID: 1130730801}
   - {fileID: 1470959889}
@@ -1873,6 +1870,7 @@ Transform:
   - {fileID: 1400047843}
   - {fileID: 1916860789}
   - {fileID: 1520954283}
+  - {fileID: 744327128}
   - {fileID: 360429541}
   - {fileID: 1327783998}
   - {fileID: 588687590}
@@ -1892,11 +1890,13 @@ Transform:
   - {fileID: 267153915}
   - {fileID: 1160573175}
   - {fileID: 1572507466}
+  - {fileID: 1870826743}
   - {fileID: 359141302}
   - {fileID: 2066962684}
   - {fileID: 2003886513}
   - {fileID: 1328589651}
   - {fileID: 686986899}
+  - {fileID: 1454504202}
   - {fileID: 233315236}
   - {fileID: 2086802569}
   - {fileID: 1212690824}
@@ -1905,6 +1905,7 @@ Transform:
   - {fileID: 474045043}
   - {fileID: 385832407}
   - {fileID: 1084389394}
+  - {fileID: 1527824271}
   - {fileID: 157386405}
   - {fileID: 1450055593}
   - {fileID: 274182818}
@@ -10842,7 +10843,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 115450918}
-  m_RootOrder: 27
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &619673101
 BoxCollider:
@@ -13480,17 +13481,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Version: 1
   parameters:
-    albedo: {r: 1, g: 1, b: 1, a: 1}
-    meanFreePath: 10
+    albedo: {r: 0.28551775, g: 0.16140084, b: 0.2924528, a: 1}
+    meanFreePath: 35.5
     asymmetry: 0
     volumeMask: {fileID: 0}
     textureScrollingSpeed: {x: 0, y: 0, z: 0}
     textureTiling: {x: 1, y: 1, z: 1}
     m_PositiveFade: {x: 0, y: 0, z: 0}
     m_NegativeFade: {x: 0, y: 0, z: 0}
-    m_UniformFade: 0
-    size: {x: 1, y: 1, z: 1}
-    advancedFade: 1
+    m_UniformFade: 0.059566785
+    size: {x: 342.97, y: 55.4, z: 422.96}
+    advancedFade: 0
     invertFade: 0
     textureIndex: -1
 --- !u!4 &834800273
@@ -13501,8 +13502,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834800271}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 171.6, y: 0, z: 171.3}
+  m_LocalScale: {x: 3.7354, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -25498,7 +25499,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 115450918}
-  m_RootOrder: 28
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1862710021
 BoxCollider:
