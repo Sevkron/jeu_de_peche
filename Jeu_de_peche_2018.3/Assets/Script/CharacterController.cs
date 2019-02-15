@@ -266,14 +266,14 @@ public class CharacterController : MonoBehaviour {
             MinMaxRangeV += TorchMovementV;
         }
 
-        if (MinMaxRangeH < 35 && MinMaxRangeH > -35)
+        /*if (MinMaxRangeH < 35 && MinMaxRangeH > -35)
         {
-            m_Lantern.transform.Rotate(new Vector3(0, TorchMovementV, 0)); // CHANGER CA SI CA TOURNE PAS CORRECTEMENT // METTRE DANS LA PREMIERE CASE PTDR
+            m_Lantern.transform.Rotate(new Vector3(TorchMovementH, 0, 0)); // CHANGER CA SI CA TOURNE PAS CORRECTEMENT // METTRE DANS LA PREMIERE CASE PTDR
         }
         else
         {
-            MinMaxRangeV += TorchMovementV;
-        }
+            MinMaxRangeH += TorchMovementH;
+        }*/
     }
 
     public void UpdateCombustibleNum()
