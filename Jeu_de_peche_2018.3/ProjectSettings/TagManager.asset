@@ -8,6 +8,7 @@ TagManager:
   - Button
   - Diary
   - Pause
+  - End
   layers:
   - Default
   - TransparentFX
