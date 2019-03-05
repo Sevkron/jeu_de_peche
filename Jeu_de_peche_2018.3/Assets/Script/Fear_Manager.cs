@@ -46,6 +46,7 @@ public class Fear_Manager : MonoBehaviour
         {
             //GetComponentInParent
             Debug.Log("You Dead");
+
             this.transform.position = gm.lastCheckPointPos;
             m_currentFearLevel = minFear;
         }
