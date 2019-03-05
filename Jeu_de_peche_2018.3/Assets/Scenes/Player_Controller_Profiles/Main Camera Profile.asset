@@ -1345,7 +1345,7 @@ MonoBehaviour:
   active: 1
   enabled:
     overrideState: 1
-    value: 1
+    value: 0
   colored:
     overrideState: 1
     value: 1
@@ -1425,7 +1425,7 @@ MonoBehaviour:
     value: 0
   shutterAngle:
     overrideState: 1
-    value: 270
+    value: 210
   sampleCount:
     overrideState: 1
     value: 10
@@ -1447,7 +1447,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 5.39
+    value: 5.96
   threshold:
     overrideState: 1
     value: 0.51
@@ -1456,10 +1456,10 @@ MonoBehaviour:
     value: 0.36
   clamp:
     overrideState: 1
-    value: 65472
+    value: 65460.96
   diffusion:
     overrideState: 1
-    value: 7
+    value: 2.04
   anamorphicRatio:
     overrideState: 1
     value: 0
