@@ -1,0 +1,248 @@
+fileFormatVersion: 2
+guid: 3e86d12e1d000cd41b39383b7449fa4e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: bas_caisse
+    100002: //RootNode
+    100004: Haut_caisse
+    100006: Metal
+    100008: Metal 1
+    100010: Metal7
+    100012: Metal8
+    100014: Metal9
+    100016: Vise_01
+    100018: Vise_010
+    100020: Vise_011
+    100022: Vise_012
+    100024: Vise_013
+    100026: Vise_014
+    100028: Vise_015
+    100030: Vise_016
+    100032: Vise_017
+    100034: Vise_018
+    100036: Vise_019
+    100038: Vise_02
+    100040: Vise_020
+    100042: Vise_021
+    100044: Vise_022
+    100046: Vise_023
+    100048: Vise_024
+    100050: Vise_03
+    100052: Vise_04
+    100054: Vise_05
+    100056: Vise_06
+    100058: Vise_07
+    100060: Vise_08
+    100062: Vise_09
+    100064: vises
+    400000: bas_caisse
+    400002: //RootNode
+    400004: Haut_caisse
+    400006: Metal
+    400008: Metal 1
+    400010: Metal7
+    400012: Metal8
+    400014: Metal9
+    400016: Vise_01
+    400018: Vise_010
+    400020: Vise_011
+    400022: Vise_012
+    400024: Vise_013
+    400026: Vise_014
+    400028: Vise_015
+    400030: Vise_016
+    400032: Vise_017
+    400034: Vise_018
+    400036: Vise_019
+    400038: Vise_02
+    400040: Vise_020
+    400042: Vise_021
+    400044: Vise_022
+    400046: Vise_023
+    400048: Vise_024
+    400050: Vise_03
+    400052: Vise_04
+    400054: Vise_05
+    400056: Vise_06
+    400058: Vise_07
+    400060: Vise_08
+    400062: Vise_09
+    400064: vises
+    2100000: lambert1
+    2300000: bas_caisse
+    2300002: Haut_caisse
+    2300004: Metal 1
+    2300006: Metal7
+    2300008: Metal8
+    2300010: Metal9
+    2300012: Vise_01
+    2300014: Vise_010
+    2300016: Vise_011
+    2300018: Vise_012
+    2300020: Vise_013
+    2300022: Vise_014
+    2300024: Vise_015
+    2300026: Vise_016
+    2300028: Vise_017
+    2300030: Vise_018
+    2300032: Vise_019
+    2300034: Vise_02
+    2300036: Vise_020
+    2300038: Vise_021
+    2300040: Vise_022
+    2300042: Vise_023
+    2300044: Vise_024
+    2300046: Vise_03
+    2300048: Vise_04
+    2300050: Vise_05
+    2300052: Vise_06
+    2300054: Vise_07
+    2300056: Vise_08
+    2300058: Vise_09
+    3300000: bas_caisse
+    3300002: Haut_caisse
+    3300004: Metal 1
+    3300006: Metal7
+    3300008: Metal8
+    3300010: Metal9
+    3300012: Vise_01
+    3300014: Vise_010
+    3300016: Vise_011
+    3300018: Vise_012
+    3300020: Vise_013
+    3300022: Vise_014
+    3300024: Vise_015
+    3300026: Vise_016
+    3300028: Vise_017
+    3300030: Vise_018
+    3300032: Vise_019
+    3300034: Vise_02
+    3300036: Vise_020
+    3300038: Vise_021
+    3300040: Vise_022
+    3300042: Vise_023
+    3300044: Vise_024
+    3300046: Vise_03
+    3300048: Vise_04
+    3300050: Vise_05
+    3300052: Vise_06
+    3300054: Vise_07
+    3300056: Vise_08
+    3300058: Vise_09
+    4300000: Haut_caisse
+    4300002: bas_caisse
+    4300004: Metal
+    4300006: Metal7
+    4300008: Metal8
+    4300010: Metal9
+    4300012: Vise_01
+    4300014: Vise_02
+    4300016: Vise_03
+    4300018: Vise_04
+    4300020: Vise_05
+    4300022: Vise_06
+    4300024: Vise_07
+    4300026: Vise_08
+    4300028: Vise_09
+    4300030: Vise_010
+    4300032: Vise_011
+    4300034: Vise_012
+    4300036: Vise_013
+    4300038: Vise_014
+    4300040: Vise_015
+    4300042: Vise_016
+    4300044: Vise_017
+    4300046: Vise_018
+    4300048: Vise_019
+    4300050: Vise_020
+    4300052: Vise_021
+    4300054: Vise_022
+    4300056: Vise_023
+    4300058: Vise_024
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
