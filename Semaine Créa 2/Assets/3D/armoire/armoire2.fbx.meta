@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: cdc0b5466f15a6949ab216e3092330af
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: witch_0011:armoire2
+    100004: witch_0011:polySurface1
+    100006: witch_0011:polySurface10
+    100008: witch_0011:polySurface11
+    100010: witch_0011:polySurface12
+    100012: witch_0011:polySurface13
+    100014: witch_0011:polySurface15
+    100016: witch_0011:polySurface16
+    100018: witch_0011:polySurface17
+    100020: witch_0011:polySurface18
+    100022: witch_0011:polySurface2
+    100024: witch_0011:polySurface3
+    100026: witch_0011:polySurface4
+    100028: witch_0011:polySurface5
+    100030: witch_0011:polySurface6
+    100032: witch_0011:polySurface7
+    100034: witch_0011:polySurface8
+    100036: witch_0011:polySurface9
+    100038: witch_0011:transform1
+    100040: witch_0011:transform2
+    100042: witch_0011:witch_0011:pCube22
+    100044: witch_0011:witch_0011:polySurface12
+    100046: witch_0011:witch_0011:transform1
+    100048: witch_0011:witch_0011:transform10
+    100050: witch_0011:witch_0011:transform11
+    100052: witch_0011:witch_0011:transform12
+    100054: witch_0011:witch_0011:transform13
+    100056: witch_0011:witch_0011:transform14
+    100058: witch_0011:witch_0011:transform15
+    100060: witch_0011:witch_0011:transform16
+    100062: witch_0011:witch_0011:transform17
+    100064: witch_0011:witch_0011:transform2
+    100066: witch_0011:witch_0011:transform3
+    100068: witch_0011:witch_0011:transform4
+    100070: witch_0011:witch_0011:transform5
+    100072: witch_0011:witch_0011:transform6
+    100074: witch_0011:witch_0011:transform7
+    100076: witch_0011:witch_0011:transform8
+    100078: witch_0011:witch_0011:transform9
+    400000: //RootNode
+    400002: witch_0011:armoire2
+    400004: witch_0011:polySurface1
+    400006: witch_0011:polySurface10
+    400008: witch_0011:polySurface11
+    400010: witch_0011:polySurface12
+    400012: witch_0011:polySurface13
+    400014: witch_0011:polySurface15
+    400016: witch_0011:polySurface16
+    400018: witch_0011:polySurface17
+    400020: witch_0011:polySurface18
+    400022: witch_0011:polySurface2
+    400024: witch_0011:polySurface3
+    400026: witch_0011:polySurface4
+    400028: witch_0011:polySurface5
+    400030: witch_0011:polySurface6
+    400032: witch_0011:polySurface7
+    400034: witch_0011:polySurface8
+    400036: witch_0011:polySurface9
+    400038: witch_0011:transform1
+    400040: witch_0011:transform2
+    400042: witch_0011:witch_0011:pCube22
+    400044: witch_0011:witch_0011:polySurface12
+    400046: witch_0011:witch_0011:transform1
+    400048: witch_0011:witch_0011:transform10
+    400050: witch_0011:witch_0011:transform11
+    400052: witch_0011:witch_0011:transform12
+    400054: witch_0011:witch_0011:transform13
+    400056: witch_0011:witch_0011:transform14
+    400058: witch_0011:witch_0011:transform15
+    400060: witch_0011:witch_0011:transform16
+    400062: witch_0011:witch_0011:transform17
+    400064: witch_0011:witch_0011:transform2
+    400066: witch_0011:witch_0011:transform3
+    400068: witch_0011:witch_0011:transform4
+    400070: witch_0011:witch_0011:transform5
+    400072: witch_0011:witch_0011:transform6
+    400074: witch_0011:witch_0011:transform7
+    400076: witch_0011:witch_0011:transform8
+    400078: witch_0011:witch_0011:transform9
+    2100000: lambert1
+    2300000: witch_0011:armoire2
+    3300000: witch_0011:armoire2
+    4300000: witch_0011:armoire2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

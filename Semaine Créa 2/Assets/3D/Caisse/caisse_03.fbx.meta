@@ -1,0 +1,248 @@
+fileFormatVersion: 2
+guid: 27d087cd1135b494da3314fd18dfbcb1
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: bas_caisse
+    100002: //RootNode
+    100004: Haut_caisse
+    100006: Metal
+    100008: Metal 1
+    100010: Metal1
+    100012: Metal2
+    100014: Metal3
+    100016: vise
+    100018: vise1
+    100020: vise10
+    100022: vise11
+    100024: vise12
+    100026: vise13
+    100028: vise14
+    100030: vise15
+    100032: vise16
+    100034: vise17
+    100036: vise18
+    100038: vise19
+    100040: vise2
+    100042: vise20
+    100044: vise21
+    100046: vise22
+    100048: vise23
+    100050: vise3
+    100052: vise4
+    100054: vise5
+    100056: vise6
+    100058: vise7
+    100060: vise8
+    100062: vise9
+    100064: Vises
+    400000: bas_caisse
+    400002: //RootNode
+    400004: Haut_caisse
+    400006: Metal
+    400008: Metal 1
+    400010: Metal1
+    400012: Metal2
+    400014: Metal3
+    400016: vise
+    400018: vise1
+    400020: vise10
+    400022: vise11
+    400024: vise12
+    400026: vise13
+    400028: vise14
+    400030: vise15
+    400032: vise16
+    400034: vise17
+    400036: vise18
+    400038: vise19
+    400040: vise2
+    400042: vise20
+    400044: vise21
+    400046: vise22
+    400048: vise23
+    400050: vise3
+    400052: vise4
+    400054: vise5
+    400056: vise6
+    400058: vise7
+    400060: vise8
+    400062: vise9
+    400064: Vises
+    2100000: lambert1
+    2300000: bas_caisse
+    2300002: Haut_caisse
+    2300004: Metal 1
+    2300006: Metal1
+    2300008: Metal2
+    2300010: Metal3
+    2300012: vise
+    2300014: vise1
+    2300016: vise10
+    2300018: vise11
+    2300020: vise12
+    2300022: vise13
+    2300024: vise14
+    2300026: vise15
+    2300028: vise16
+    2300030: vise17
+    2300032: vise18
+    2300034: vise19
+    2300036: vise2
+    2300038: vise20
+    2300040: vise21
+    2300042: vise22
+    2300044: vise23
+    2300046: vise3
+    2300048: vise4
+    2300050: vise5
+    2300052: vise6
+    2300054: vise7
+    2300056: vise8
+    2300058: vise9
+    3300000: bas_caisse
+    3300002: Haut_caisse
+    3300004: Metal 1
+    3300006: Metal1
+    3300008: Metal2
+    3300010: Metal3
+    3300012: vise
+    3300014: vise1
+    3300016: vise10
+    3300018: vise11
+    3300020: vise12
+    3300022: vise13
+    3300024: vise14
+    3300026: vise15
+    3300028: vise16
+    3300030: vise17
+    3300032: vise18
+    3300034: vise19
+    3300036: vise2
+    3300038: vise20
+    3300040: vise21
+    3300042: vise22
+    3300044: vise23
+    3300046: vise3
+    3300048: vise4
+    3300050: vise5
+    3300052: vise6
+    3300054: vise7
+    3300056: vise8
+    3300058: vise9
+    4300000: Haut_caisse
+    4300002: bas_caisse
+    4300004: vise
+    4300006: vise1
+    4300008: vise2
+    4300010: vise3
+    4300012: vise4
+    4300014: vise5
+    4300016: vise6
+    4300018: vise7
+    4300020: vise8
+    4300022: vise9
+    4300024: vise10
+    4300026: vise11
+    4300028: vise12
+    4300030: vise13
+    4300032: vise14
+    4300034: vise15
+    4300036: vise16
+    4300038: vise18
+    4300040: vise17
+    4300042: vise19
+    4300044: vise20
+    4300046: vise21
+    4300048: vise22
+    4300050: vise23
+    4300052: Metal
+    4300054: Metal1
+    4300056: Metal2
+    4300058: Metal3
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
