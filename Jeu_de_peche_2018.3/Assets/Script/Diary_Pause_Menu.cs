@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Diary_Pause_Menu : MonoBehaviour
 {
@@ -8,9 +9,15 @@ public class Diary_Pause_Menu : MonoBehaviour
     public bool DiaryCanvasActive = false;
 
     public GameObject ButtonDiary;
+    public GameObject m_NextButton;
+    public GameObject m_PauseButton;
 
     private GameObject MenuPause;
     private bool PauseCanvasActive = false;
+
+    private EventSystem eventSystem;
+
+
 
     void Start()
     {
@@ -18,6 +25,7 @@ public class Diary_Pause_Menu : MonoBehaviour
         ButtonDiary.SetActive(false);
         MenuPause = GameObject.FindGameObjectWithTag("Pause");
         MenuPause.SetActive(false);
+        eventSystem = EventSystem.current;
     }
 
     void Update()
@@ -26,15 +34,14 @@ public class Diary_Pause_Menu : MonoBehaviour
 
         if (Input.GetButton("Diary") && DiaryCanvasActive == false && PauseCanvasActive == false)
             {
+                eventSystem.SetSelectedGameObject(m_NextButton, new BaseEventData(eventSystem));
                 m_CanvasDiary.SetActive(true);
                 ButtonDiary.SetActive(true);
                 DiaryCanvasActive = true;
-
-
                 GetComponentInParent<CharacterController>().enabled = false;
             }
         
-            if (Input.GetButton("Cancel") && DiaryCanvasActive == true)
+        if (Input.GetButton("Cancel") && DiaryCanvasActive == true)
             {
                  m_CanvasDiary.SetActive(false);
                  ButtonDiary.SetActive(false);
@@ -44,6 +51,7 @@ public class Diary_Pause_Menu : MonoBehaviour
 
         if (Input.GetButton("Pause") && PauseCanvasActive == false && DiaryCanvasActive == false)
         {
+            eventSystem.SetSelectedGameObject(m_PauseButton, new BaseEventData(eventSystem));
             Time.timeScale = 0;
             MenuPause.SetActive(true);
             PauseCanvasActive = true;
