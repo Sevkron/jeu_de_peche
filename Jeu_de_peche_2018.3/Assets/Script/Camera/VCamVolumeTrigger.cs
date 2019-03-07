@@ -10,11 +10,8 @@ public class VCamVolumeTrigger : MonoBehaviour {
 
     public CinemachineVirtualCamera m_VCam;
 
-
     private void OnTriggerEnter(Collider other)
     {
-        //  Debug.Log("Camera manager", CameraManager.Instance.gameObject);
-
         CameraManager.Instance.SetVCamActive(m_VCam);
     }
 }

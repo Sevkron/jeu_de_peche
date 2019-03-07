@@ -24,10 +24,6 @@ public class CameraManager : MonoBehaviour {
 
     }
 
-    private void Start()
-    {
-       // SetVCamActive(0);
-    }
 
     public void SetVCamActive(int a_Index)
     {

@@ -10,6 +10,7 @@ TagManager:
   - Pause
   - End
   - Planche
+  - Light
   layers:
   - Default
   - TransparentFX
@@ -21,8 +22,8 @@ TagManager:
   - 
   - PostProcessing
   - Wall
-  - 
-  - 
+  - Background
+  - Player
   - 
   - 
   - 

@@ -1361,7 +1361,7 @@ GameObject:
   - component: {fileID: 1602559195}
   m_Layer: 0
   m_Name: DiaryScript
-  m_TagString: Untagged
+  m_TagString: Diary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1395,6 +1395,8 @@ MonoBehaviour:
   m_CanvasDiary: {fileID: 0}
   DiaryCanvasActive: 0
   ButtonDiary: {fileID: 0}
+  m_NextButton: {fileID: 0}
+  m_PauseButton: {fileID: 0}
 --- !u!1 &1612987448
 GameObject:
   m_ObjectHideFlags: 0
