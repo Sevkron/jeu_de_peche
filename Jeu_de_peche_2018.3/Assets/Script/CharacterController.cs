@@ -160,7 +160,7 @@ public class CharacterController : MonoBehaviour {
         m_animator.SetFloat("MoveSpeed", m_currentV + m_currentH);
         //JumpingAndLanding();
         UseCombustible();
-        Light();
+        //Light();
     }
 
     private void DirectUpdate()
@@ -197,7 +197,7 @@ public class CharacterController : MonoBehaviour {
 
         UseCombustible();
         JumpingAndLanding();
-        Light();
+        //Light();
     }
 
     private void JumpingAndLanding()
@@ -239,14 +239,15 @@ public class CharacterController : MonoBehaviour {
         }
     }
 
-    private void Light()
+    /*private void Light()
     {
         float verticalValue;
         float horizontalValue;
 
         verticalValue = -Input.GetAxisRaw("Vertical2") * Time.deltaTime;
         horizontalValue = -Input.GetAxisRaw("Horizontal") * Time.deltaTime;
-        RotLamp(verticalValue, horizontalValue);
+        //RotLamp(verticalValue, horizontalValue);
+        Debug.Log(Input.GetAxisRaw("Horizontal"));
     }
 
     private void RotLamp(float InputValueV, float InputValueH)
@@ -268,13 +269,13 @@ public class CharacterController : MonoBehaviour {
 
         if (MinMaxRangeH < 35 && MinMaxRangeH > -35)
         {
-            m_Lantern.transform.Rotate(new Vector3(0, TorchMovementH, 0)); // CHANGER CA SI CA TOURNE PAS CORRECTEMENT // METTRE DANS LA PREMIERE CASE PTDR
+            m_Lantern.transform.Rotate(new Vector3(TorchMovementH, 0, 0)); // CHANGER CA SI CA TOURNE PAS CORRECTEMENT // METTRE DANS LA PREMIERE CASE PTDR
         }
         else
         {
             MinMaxRangeH += TorchMovementH;
         }
-    }
+    }*/
 
     public void UpdateCombustibleNum()
     {
