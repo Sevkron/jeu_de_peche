@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6242775959176694886}
+  - component: {fileID: 4791348838365000337}
   m_Layer: 0
   m_Name: seaweed_2
   m_TagString: Untagged
@@ -23,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6133038864901155097}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.706, y: -1.8310957, z: 1.859}
   m_LocalScale: {x: 4.8108416, y: 4.8108416, z: 4.8108416}
   m_Children:
@@ -31,6 +32,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4791348838365000337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6133038864901155097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da112cfc7cc4f8440a44e8e4d9cba10b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8164749460894624433
 GameObject:
   m_ObjectHideFlags: 0

@@ -86,6 +86,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6515081696884611252}
+  - component: {fileID: 7535104323259873705}
   m_Layer: 0
   m_Name: fern2
   m_TagString: Untagged
@@ -100,7 +101,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4726011293449279805}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.034, y: -1.816, z: 1.6}
   m_LocalScale: {x: 4.8108416, y: 4.8108416, z: 4.8108416}
   m_Children:
@@ -108,3 +109,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7535104323259873705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4726011293449279805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da112cfc7cc4f8440a44e8e4d9cba10b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
