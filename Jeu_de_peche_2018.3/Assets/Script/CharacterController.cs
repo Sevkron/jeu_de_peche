@@ -153,7 +153,7 @@ public class CharacterController : MonoBehaviour {
 
         transform.position += transform.forward * m_currentV * m_moveSpeed * Time.deltaTime;
         //Strafe Personnage
-        transform.position += transform.right * m_currentH * m_strafeSpeed * Time.deltaTime;
+        //transform.position += transform.right * m_currentH * m_strafeSpeed * Time.deltaTime;
         //Rotation Personnage
         transform.Rotate(0, m_currentH2 * m_turnSpeed * Time.deltaTime, 0);
 

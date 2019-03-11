@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1502188669430380035}
   - component: {fileID: 4313609483823262913}
   - component: {fileID: 4991513727902707279}
+  - component: {fileID: 7972398405580773150}
   m_Layer: 0
   m_Name: FBX_PropsExt02_SupportCharge_Seaux
   m_TagString: Untagged
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7972398405580773150
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4865705220595737750}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2719704, y: 0.7200256, z: 1.4607732}
+  m_Center: {x: -0.00053827465, y: 0.3600128, z: 0.0075259507}
