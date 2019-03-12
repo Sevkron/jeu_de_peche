@@ -22,6 +22,9 @@ public class Fear_Manager : MonoBehaviour
     private AudioMixerSnapshot defaultSnapshot;
     private AudioMixerSnapshot fearSnapshot;
 
+    private IEnumerator coroutuneInvertControls;
+    private bool coroutineActive;
+
     private float fearModifier;
     private float currentLight;
     // Start is called before the first frame update
@@ -41,21 +44,21 @@ public class Fear_Manager : MonoBehaviour
         m_currentFearLevel = m_currentFearLevel + fearModifier * Time.deltaTime;
         if (currentLight >= 25 && m_currentFearLevel > minFear)
         {
-            fearModifier = -1f;
+            fearModifier = -0.5f;
         }else if(currentLight < 25 && currentLight > 10)
         {
-            fearModifier = 1f;
+            fearModifier = 0.5f;
         }
         else if(currentLight <= 10)
         {
-            fearModifier = 2f ;
+            fearModifier = 1f ;
         }
         else
         {
             fearModifier = 0;
         }
 
-        if(m_currentFearLevel > 20)
+        if(m_currentFearLevel >= 20 && m_currentFearLevel < 50)
         {
             vignetteIsActive = true;
             vignette = ScriptableObject.CreateInstance<Vignette>();
@@ -68,21 +71,28 @@ public class Fear_Manager : MonoBehaviour
             DOTween.Sequence()
                 .Append(DOTween.To(() => volume.weight, x => volume.weight = x, 1f, 2000f));
         }
-        else if (m_currentFearLevel > 50)
+        else if (m_currentFearLevel >= 50 && m_currentFearLevel < 75)
         {
-            fearSnapshot.TransitionTo(1f);
+            fearSnapshot.TransitionTo(2f);
         }
-        else if (m_currentFearLevel > 75)
+        else if (m_currentFearLevel >= 75 && m_currentFearLevel < maxFear)
         {
-
+            coroutuneInvertControls = InvertControls(5f);
+            if (coroutineActive == false)
+            {
+                StartCoroutine(coroutuneInvertControls);
+                coroutineActive = true;
+            }
         }
         else if(m_currentFearLevel >= maxFear)
         {
-            defaultSnapshot.TransitionTo(.5f);
+            StopCoroutine("InvertControls");
+            defaultSnapshot.TransitionTo(2f);
             //GetComponentInParent
             Debug.Log("You Dead");
             this.transform.position = gm.lastCheckPointPos;
             m_currentFearLevel = minFear;
+            gm.GetComponent<GameMaster>().Death();
         }
         else
         {
@@ -96,5 +106,16 @@ public class Fear_Manager : MonoBehaviour
                 return;
             }
         }
+    }
+
+    IEnumerator InvertControls(float WaitTime)
+    {
+        yield return new WaitForSeconds(WaitTime);
+        Debug.Log("Inverting controls");
+        bool inverted = this.GetComponent<CharacterController>().m_invertJoysticks;
+        this.GetComponent<CharacterController>().m_invertJoysticks = !inverted;
+        yield return new WaitForSeconds(WaitTime);
+        coroutineActive = false;
+
     }
 }
