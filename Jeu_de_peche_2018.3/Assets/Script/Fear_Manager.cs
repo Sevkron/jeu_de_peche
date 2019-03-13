@@ -24,6 +24,7 @@ public class Fear_Manager : MonoBehaviour
 
     private IEnumerator coroutuneInvertControls;
     private bool coroutineActive;
+    private bool invertJoysticksPlayerOption;
 
     private float fearModifier;
     private float currentLight;
@@ -60,6 +61,7 @@ public class Fear_Manager : MonoBehaviour
 
         if(m_currentFearLevel >= 20 && m_currentFearLevel < 50)
         {
+            defaultSnapshot.TransitionTo(2f);
             vignetteIsActive = true;
             vignette = ScriptableObject.CreateInstance<Vignette>();
             vignette.enabled.Override(true);
@@ -73,7 +75,12 @@ public class Fear_Manager : MonoBehaviour
         }
         else if (m_currentFearLevel >= 50 && m_currentFearLevel < 75)
         {
+            this.GetComponent<CharacterController>().m_invertJoysticks = this.GetComponent<CharacterController>().m_invertJoysticksPlayerOption;
             fearSnapshot.TransitionTo(2f);
+            if (coroutineActive == true)
+            {
+                StopCoroutine("InvertControls");
+            }
         }
         else if (m_currentFearLevel >= 75 && m_currentFearLevel < maxFear)
         {
@@ -91,6 +98,7 @@ public class Fear_Manager : MonoBehaviour
             //GetComponentInParent
             Debug.Log("You Dead");
             this.transform.position = gm.lastCheckPointPos;
+            this.GetComponent<CharacterController>().m_invertJoysticks = this.GetComponent<CharacterController>().m_invertJoysticksPlayerOption;
             m_currentFearLevel = minFear;
             gm.GetComponent<GameMaster>().Death();
         }
@@ -116,6 +124,5 @@ public class Fear_Manager : MonoBehaviour
         this.GetComponent<CharacterController>().m_invertJoysticks = !inverted;
         yield return new WaitForSeconds(WaitTime);
         coroutineActive = false;
-
     }
 }

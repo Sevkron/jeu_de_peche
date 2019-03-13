@@ -28,6 +28,7 @@ public class CharacterController : MonoBehaviour {
     private float v;
     private float h;
     private float h2;
+    public bool m_invertJoysticksPlayerOption;
     public bool m_invertJoysticks;
     private readonly float m_interpolation = 10;
     private readonly float m_walkScale = 0.33f;
