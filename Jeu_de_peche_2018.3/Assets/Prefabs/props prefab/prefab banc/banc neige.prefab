@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7921863195661785496}
   - component: {fileID: 2272624896532422805}
   - component: {fileID: 2089660278313060717}
+  - component: {fileID: 7887421857148403772}
   m_Layer: 0
   m_Name: banc neige
   m_TagString: Untagged
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &7887421857148403772
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111003224125802135}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.023145856, y: 0.036717016, z: 0.038732424}
+  m_Center: {x: 0, y: 0.018358508, z: -9.313226e-10}

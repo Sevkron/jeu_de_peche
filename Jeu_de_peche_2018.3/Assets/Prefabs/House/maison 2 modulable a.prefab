@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5835429042595374463}
   - component: {fileID: 8319063763076006496}
   - component: {fileID: 95057005719168607}
+  - component: {fileID: 9079136358607422883}
   m_Layer: 0
   m_Name: maison 2 modulable a
   m_TagString: Untagged
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &9079136358607422883
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6699821935888007565}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.929946, y: 6.4783416, z: 8.472645}
+  m_Center: {x: -2.2928948, y: 3.2391708, z: 4.2329073}

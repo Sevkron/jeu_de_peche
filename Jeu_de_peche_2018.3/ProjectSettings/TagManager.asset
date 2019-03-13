@@ -11,6 +11,8 @@ TagManager:
   - End
   - Planche
   - Light
+  - Object
+  - CanvasBook
   layers:
   - Default
   - TransparentFX

@@ -25,6 +25,10 @@ public class CharacterController : MonoBehaviour {
     private float m_currentH = 0;
     private float m_currentV2 = 0;
     private float m_currentH2 = 0;
+    private float v;
+    private float h;
+    private float h2;
+    public bool m_invertJoysticks;
     private readonly float m_interpolation = 10;
     private readonly float m_walkScale = 0.33f;
     private readonly float m_backwardsWalkScale = 0.16f;
@@ -51,7 +55,7 @@ public class CharacterController : MonoBehaviour {
     private float MinMaxRangeV;
     private float MinMaxRangeH;
 
-    private void OnCollisionEnter(Collision collision)
+    /*private void OnCollisionEnter(Collision collision)
     {
         ContactPoint[] contactPoints = collision.contacts;
         for(int i = 0; i < contactPoints.Length; i++)
@@ -102,7 +106,7 @@ public class CharacterController : MonoBehaviour {
             m_collisions.Remove(collision.collider);
         }
         if (m_collisions.Count == 0) { m_isGrounded = false; }
-    }
+    }*/
 
 	void Update () {
         TorchMovementV = 0;
@@ -128,11 +132,22 @@ public class CharacterController : MonoBehaviour {
 
     private void TankUpdate()
     {
-        float v = Input.GetAxis("Vertical");
+        if (m_invertJoysticks == false)
+        {
+            v = Input.GetAxis("Vertical");
+            h2 = Input.GetAxis("Horizontal2");
+        }
+        else
+        {
+            v = Input.GetAxis("Vertical2");
+            h2 = Input.GetAxis("Horizontal");
+        }
+
+        /*float v = Input.GetAxis("Vertical");
         float h = Input.GetAxis("Horizontal");
 
         float v2 = Input.GetAxis("Vertical2");
-        float h2 = Input.GetAxis("Horizontal2");
+        float h2 = Input.GetAxis("Horizontal2");*/
 
         Transform camera = Camera.main.transform;
         //Transform camera = this.gameObject.transform;
@@ -148,16 +163,16 @@ public class CharacterController : MonoBehaviour {
         }
 
         m_currentV = Mathf.Lerp(m_currentV, v, Time.deltaTime * m_interpolation);
-        m_currentH = Mathf.Lerp(m_currentH, h, Time.deltaTime * m_interpolation);
+        //m_currentH = Mathf.Lerp(m_currentH, h, Time.deltaTime * m_interpolation);
         m_currentH2 = Mathf.Lerp(m_currentH2, h2, Time.deltaTime * m_interpolation);
 
         transform.position += transform.forward * m_currentV * m_moveSpeed * Time.deltaTime;
         //Strafe Personnage
-        transform.position += transform.right * m_currentH * m_strafeSpeed * Time.deltaTime;
+        //transform.position += transform.right * m_currentH * m_strafeSpeed * Time.deltaTime;
         //Rotation Personnage
         transform.Rotate(0, m_currentH2 * m_turnSpeed * Time.deltaTime, 0);
 
-        m_animator.SetFloat("MoveSpeed", m_currentV + m_currentH);
+        m_animator.SetFloat("MoveSpeed", m_currentV /*+ m_currentH*/);
         //JumpingAndLanding();
         UseCombustible();
         //Light();
@@ -165,8 +180,16 @@ public class CharacterController : MonoBehaviour {
 
     private void DirectUpdate()
     {
-        float v = Input.GetAxis("Vertical");
-        float h = Input.GetAxis("Horizontal");
+        if (m_invertJoysticks == false)
+        {
+            //float v = Input.GetAxis("Vertical");
+            //float h = Input.GetAxis("Horizontal");
+        }
+        else
+        {
+            //float v = Input.GetAxis("Vertical2");
+            //float h = Input.GetAxis("Horizontal2");
+        }
 
         Transform camera = Camera.main.transform;
 
@@ -196,11 +219,11 @@ public class CharacterController : MonoBehaviour {
         }
 
         UseCombustible();
-        JumpingAndLanding();
+        //JumpingAndLanding();
         //Light();
     }
 
-    private void JumpingAndLanding()
+    /*private void JumpingAndLanding()
     {
         bool jumpCooldownOver = (Time.time - m_jumpTimeStamp) >= m_minJumpInterval;
 
@@ -219,7 +242,7 @@ public class CharacterController : MonoBehaviour {
         {
             m_animator.SetTrigger("Jump");
         }
-    }
+    }*/
 
     public void UseCombustible()
     {

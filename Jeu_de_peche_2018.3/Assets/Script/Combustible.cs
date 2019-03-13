@@ -6,9 +6,13 @@ using UnityEngine;
 
 public class Combustible : MonoBehaviour
 {
+    private bool MeshRend;
+
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player")
+        MeshRend = gameObject.GetComponent<MeshRenderer>().enabled;
+
+        if (other.tag == "Player" && MeshRend == true)
         {
             var player = other.gameObject;
             //var ch = player.transform.GetComponent<CharacterController>().combustibleNum;

@@ -6,6 +6,7 @@ public class GameMaster : MonoBehaviour
 {
     private static GameMaster instance;
     public Vector3 lastCheckPointPos;
+    public AudioClip deathSFX;
 
     private void Awake()
     {
@@ -18,5 +19,10 @@ public class GameMaster : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void Death()
+    {
+        GetComponent<AudioSource>().PlayOneShot(deathSFX);
     }
 }

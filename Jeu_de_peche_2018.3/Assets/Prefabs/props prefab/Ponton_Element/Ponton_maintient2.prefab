@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1693748139265658313}
   - component: {fileID: 9141749510613799937}
   - component: {fileID: 3537288943590943907}
+  - component: {fileID: 362891244088656336}
   m_Layer: 0
   m_Name: Ponton_maintient2
   m_TagString: Untagged
@@ -77,3 +78,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &362891244088656336
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6474641579604143834}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.009999998, y: 0.02181745, z: 0.009999999}
+  m_Center: {x: 0.0000000011641532, y: 0.0031776405, z: -0.0049818917}
