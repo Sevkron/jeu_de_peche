@@ -5,10 +5,12 @@ using UnityEngine;
 public class CheckPoint : MonoBehaviour
 {
     private GameMaster gm;
+    private ParticleSystem Sparkle;
 
     void Start()
     {
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+        Sparkle = gameObject.GetComponentInChildren<ParticleSystem>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -16,6 +18,7 @@ public class CheckPoint : MonoBehaviour
         if(other.tag == "Player")
         {
             gm.lastCheckPointPos = transform.position;
+            Sparkle.Play();
         }
     }
 }

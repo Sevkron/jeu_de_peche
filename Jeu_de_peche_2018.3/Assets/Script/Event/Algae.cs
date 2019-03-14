@@ -6,7 +6,10 @@ public class Algae : MonoBehaviour
 {
     private GameObject Player;
     private float LantLight;
-    
+    public GameObject m_fire2;
+    public GameObject m_fire3;
+
+
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -20,10 +23,15 @@ public class Algae : MonoBehaviour
         {
             if (Input.GetButton("Interact") && LantLight > 20)
             {
-                //play anim algue qui brule (coroutine)
-                gameObject.SetActive(false);
+                m_fire2.SetActive(true);
+                m_fire3.SetActive(true);
+                m_fire2.GetComponentInChildren<Light>().enabled = false;
+                m_fire3.GetComponentInChildren<Light>().enabled = false;
+                this.transform.parent.gameObject.SetActive(false);
+                //gameObject.SetActive(false);
                 LantLight = LantLight - 20;
                 Player.GetComponentInChildren<LanternScript>().currentLanternLight = LantLight;
+
             }
         }
     }
