@@ -12,8 +12,8 @@ public class Diary_Pause_Menu : MonoBehaviour
     public GameObject m_NextButton;
     public GameObject m_PauseButton;
 
-    private GameObject MenuPause;
-    private bool PauseCanvasActive = false;
+    public GameObject MenuPause;
+    public bool PauseCanvasActive = false;
 
     private EventSystem eventSystem;
 
