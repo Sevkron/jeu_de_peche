@@ -53,7 +53,7 @@ public class Journal_test_Leo : MonoBehaviour
         }
     }
     
-    /*void Update()
+    void Update()
     {
         if (Input.GetKeyDown(KeyCode.Keypad1))
         {
@@ -143,7 +143,7 @@ public class Journal_test_Leo : MonoBehaviour
             index++;
             t_notes[9].transform.localPosition = new Vector3(100, 0, 0);
         }
-    }*/
+    }
 
     public void TurnLeft()
     {

@@ -6,6 +6,7 @@ public class Bridge : MonoBehaviour
 {
     private Rigidbody rigidbody;
     private GameObject Player;
+    public GameObject WoodCrac;
 
     void Start()
     {
@@ -17,6 +18,7 @@ public class Bridge : MonoBehaviour
         if(other.tag == "Player")
         {
             //if (Player . variable de vitesse > 20)
+            WoodCrac.SetActive(true);
             rigidbody = GetComponent<Rigidbody>();
             rigidbody.useGravity = true;
 

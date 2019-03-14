@@ -34,13 +34,16 @@ public class Event_Child2 : MonoBehaviour
         {
             Player.transform.position = gm.lastCheckPointPos;
             gameObject.SetActive(false);
+            gm.GetComponent<GameMaster>().Death();
 
             if(m_Event_With_Combustible== true)
             {
                 Player.GetComponent<CharacterController>().enabled = true;
-                Lantern = Player.transform.Find("Lantern").gameObject;
+                //Lantern = Player.transform.Find("Lantern").gameObject;
+                Lantern = Player.transform.Find("Heroine_rigg").gameObject.transform.Find("Root_jnt").gameObject.transform.Find("R_hip_jnt").gameObject.transform.Find("HeroLantern").gameObject;
                 Lantern.SetActive(false);
-                Player.GetComponent<IKControl>().enabled = false;
+                //animantore bool a changer
+                //Player.GetComponent<IKControl>().enabled = false;
                 m_Lantern_Au_Sol.SetActive(true);
             }
         }
