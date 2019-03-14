@@ -1,17 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &6654091644758088994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 898827024941028218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a911814e672bd3842bc921c9e006bb60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!135 &6895271329523077734
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20,18 +8,18 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 898827024941028218}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.07267921
   m_Center: {x: 0.0003361785, y: 0.05298752, z: 0.00000137317}
---- !u!114 &3486153800984847694
+--- !u!114 &6654091644758088994
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3537810382732908723}
+  m_GameObject: {fileID: 898827024941028218}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a911814e672bd3842bc921c9e006bb60, type: 3}
@@ -45,11 +33,23 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3537810382732908723}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.07762316
   m_Center: {x: -0.000012358651, y: 0.035878506, z: -0.000000059604645}
+--- !u!114 &3486153800984847694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3537810382732908723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a911814e672bd3842bc921c9e006bb60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7754172464027323962
 GameObject:
   m_ObjectHideFlags: 0
@@ -59,7 +59,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7754172464027323909}
-  - component: {fileID: 7754172464027323908}
   m_Layer: 0
   m_Name: All Combustible
   m_TagString: Untagged
@@ -74,7 +73,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7754172464027323962}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1548.0903, y: 140.71793, z: 161.44373}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -83,20 +82,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7754172464027323908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7754172464027323962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 512da1a6408db734896bf17b558a754f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_NumberCombustible: 0
-  m_ShowNumberCombustible: {fileID: 0}
 --- !u!1001 &6917165952054260870
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -108,6 +93,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Combustible
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019047304663623676, guid: 754f4211e72160646b91ce617cf820f4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object
       objectReference: {fileID: 0}
     - target: {fileID: 8090397274197635331, guid: 754f4211e72160646b91ce617cf820f4,
         type: 3}
@@ -179,6 +169,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3.6027482
       objectReference: {fileID: 0}
+    - target: {fileID: 3823728508400565721, guid: 754f4211e72160646b91ce617cf820f4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 754f4211e72160646b91ce617cf820f4, type: 3}
 --- !u!1 &898827024941028218 stripped
@@ -204,6 +199,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Combustible (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019047304663623676, guid: 754f4211e72160646b91ce617cf820f4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Object
       objectReference: {fileID: 0}
     - target: {fileID: 8090397274197635331, guid: 754f4211e72160646b91ce617cf820f4,
         type: 3}
@@ -274,6 +274,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 3.6027482
+      objectReference: {fileID: 0}
+    - target: {fileID: 3823728508400565721, guid: 754f4211e72160646b91ce617cf820f4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 754f4211e72160646b91ce617cf820f4, type: 3}
