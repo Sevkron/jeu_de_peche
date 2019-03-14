@@ -40,10 +40,10 @@ public class Event_Child2 : MonoBehaviour
             {
                 Player.GetComponent<CharacterController>().enabled = true;
                 //Lantern = Player.transform.Find("Lantern").gameObject;
-                Lantern = Player.transform.Find("Heroine_rigg").gameObject.transform.Find("Root_jnt").gameObject.transform.Find("R_hip_jnt").gameObject.transform.Find("HeroLantern").gameObject;
+                Lantern = Player.transform.Find("Heroine_rigg").gameObject.transform.Find("R_hand_jnt").gameObject.transform.Find("HeroLantern").gameObject;
                 Lantern.SetActive(false);
                 //animantore bool a changer
-                //Player.GetComponent<IKControl>().enabled = false;
+                Player.GetComponent<Animator>().SetBool("Has Lantern", false);
                 m_Lantern_Au_Sol.SetActive(true);
             }
         }

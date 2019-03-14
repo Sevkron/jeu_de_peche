@@ -23,6 +23,7 @@ public class GameMaster : MonoBehaviour
 
     public void Death()
     {
+        //Put effects from fear manager here
         GetComponent<AudioSource>().PlayOneShot(deathSFX);
     }
 }

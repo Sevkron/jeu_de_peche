@@ -173,7 +173,7 @@ public class CharacterController : MonoBehaviour {
         //Rotation Personnage
         transform.Rotate(0, m_currentH2 * m_turnSpeed * Time.deltaTime, 0);
 
-        m_animator.SetFloat("MoveSpeed", m_currentV /*+ m_currentH*/);
+        m_animator.SetFloat("MoveSpeed", m_currentV + m_currentH);
         //JumpingAndLanding();
         UseCombustible();
         //Light();

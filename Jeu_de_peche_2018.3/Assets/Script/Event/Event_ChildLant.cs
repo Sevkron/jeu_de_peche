@@ -18,9 +18,9 @@ public class Event_ChildLant : MonoBehaviour
         {
             gameObject.SetActive(false);
             //Lantern = Player.transform.Find("Lantern").gameObject;
-            Lantern = Player.transform.Find("Heroine_rigg").gameObject.transform.Find("Root_jnt").gameObject.transform.Find("R_hip_jnt").gameObject.transform.Find("HeroLantern").gameObject;
+            Lantern = Player.transform.Find("Heroine_rigg").gameObject.transform.Find("R_hand_jnt").gameObject.transform.Find("HeroLantern").gameObject;
             Lantern.SetActive(true);
-            //animantore bool a changer
+            Player.GetComponent<Animator>().SetBool("Has Lantern", true);
             //Player.GetComponent<IKControl>().enabled = true;
         }
     }

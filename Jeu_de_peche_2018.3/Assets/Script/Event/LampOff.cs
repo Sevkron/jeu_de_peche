@@ -16,7 +16,7 @@ public class LampOff : MonoBehaviour
 
     void Update()
     {
-        LvlLight = Player.transform.Find("Heroine_rigg").gameObject.transform.Find("Root_jnt").gameObject.transform.Find("R_hip_jnt").gameObject.transform.Find("HeroLantern").gameObject.GetComponent<LanternScript>().currentLanternLight;
+        LvlLight = Player.transform.Find("Heroine_rigg").gameObject.transform.Find("R_hand_jnt").gameObject.transform.Find("HeroLantern").gameObject.GetComponent<LanternScript>().currentLanternLight;
     }
 
     private void OnTriggerEnter(Collider other)

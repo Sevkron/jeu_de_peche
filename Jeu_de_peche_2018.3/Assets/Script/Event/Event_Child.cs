@@ -40,7 +40,7 @@ public class Event_Child : MonoBehaviour
             {
                 gameObject.SetActive(false);
                 //Lantern = Player.transform.Find("HeroLantern").gameObject;
-                Lantern = Player.transform.Find("Heroine_rigg").gameObject.transform.Find("Root_jnt").gameObject.transform.Find("R_hip_jnt").gameObject.transform.Find("HeroLantern").gameObject;
+                Lantern = Player.transform.Find("Heroine_rigg").gameObject.transform.Find("R_hand_jnt").gameObject.transform.Find("HeroLantern").gameObject;
                 Lantern.GetComponent<LanternScript>().currentLanternLight = 0;
             }
         }
