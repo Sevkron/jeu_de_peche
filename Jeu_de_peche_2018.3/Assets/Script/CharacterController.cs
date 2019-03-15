@@ -36,6 +36,7 @@ public class CharacterController : MonoBehaviour {
     private readonly float m_backwardRunScale = 0.66f;
 
     private bool m_wasGrounded;
+    public bool m_isInTightSpace = false;
     private Vector3 m_currentDirection = Vector3.zero;
 
     private float m_jumpTimeStamp = 0;
@@ -171,9 +172,13 @@ public class CharacterController : MonoBehaviour {
         //Strafe Personnage
         //transform.position += transform.right * m_currentH * m_strafeSpeed * Time.deltaTime;
         //Rotation Personnage
-        transform.Rotate(0, m_currentH2 * m_turnSpeed * Time.deltaTime, 0);
+        if (m_isInTightSpace == false)
+        {
+            transform.Rotate(0, m_currentH2 * m_turnSpeed * Time.deltaTime, 0);
+        }
 
         m_animator.SetFloat("MoveSpeed", m_currentV + m_currentH);
+        m_animator.SetFloat("TurnSpeed", m_currentH2 + m_currentV2);
         //JumpingAndLanding();
         UseCombustible();
         //Light();
