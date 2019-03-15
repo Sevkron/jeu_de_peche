@@ -6,7 +6,7 @@ public class Event_ChildLant : MonoBehaviour
 {
     private GameObject Player;
     private GameObject Lantern;
-   
+
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
