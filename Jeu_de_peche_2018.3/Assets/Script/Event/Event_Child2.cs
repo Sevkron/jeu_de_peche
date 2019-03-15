@@ -40,7 +40,7 @@ public class Event_Child2 : MonoBehaviour
             {
                 Player.GetComponent<CharacterController>().enabled = true;
                 //Lantern = Player.transform.Find("Lantern").gameObject;
-                Lantern = Player.transform.Find("Heroine_rigg").gameObject.transform.Find("R_hand_jnt").gameObject.transform.Find("HeroLantern").gameObject;
+                Lantern = Player.transform.Find("Lant").gameObject.transform.Find("HeroLantern").gameObject;
                 Lantern.SetActive(false);
                 //animantore bool a changer
                 Player.GetComponent<Animator>().SetBool("Has Lantern", false);

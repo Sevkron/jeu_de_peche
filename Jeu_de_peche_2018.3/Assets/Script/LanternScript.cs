@@ -10,7 +10,6 @@ public class LanternScript : MonoBehaviour
     private Light lanternLight;
     private float t;
 
-    public GameObject Hand;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +22,6 @@ public class LanternScript : MonoBehaviour
     {
         lanternLight.intensity = currentLanternLight;
         LightIntensity();
-        gameObject.transform.position = Hand.transform.position;
     }
 
     void LightIntensity()

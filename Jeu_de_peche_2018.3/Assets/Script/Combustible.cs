@@ -7,7 +7,6 @@ using UnityEngine;
 public class Combustible : MonoBehaviour
 {
     private bool MeshRend;
-    private ParticleSystem Pick_up;
 
     private void OnTriggerStay(Collider other)
     {
@@ -19,7 +18,6 @@ public class Combustible : MonoBehaviour
             //var ch = player.transform.GetComponent<CharacterController>().combustibleNum;
             if (Input.GetButton("Interact"))
             {
-                StartCoroutine(waitparticle());
                 //gameObject.SetActive(false);
                 gameObject.GetComponent<MeshRenderer>().enabled = false;
                 gameObject.GetComponent<SphereCollider>().enabled = false;
@@ -27,12 +25,5 @@ public class Combustible : MonoBehaviour
                 player.transform.GetComponent<CharacterController>().UpdateCombustibleNum();
             }
         }
-    }
-
-    IEnumerator waitparticle()
-    {
-        Pick_up = gameObject.GetComponentInChildren<ParticleSystem>();
-        Pick_up.Play();
-        yield return new WaitForSecondsRealtime(3);
     }
 }

@@ -16,6 +16,7 @@ public class Objects : MonoBehaviour
             {
                 ResetTimer();
                 other.gameObject.GetComponent<MeshRenderer>().enabled = true;
+                other.gameObject.GetComponentInChildren<ParticleSystem>().Play();
             }
         }
     }
