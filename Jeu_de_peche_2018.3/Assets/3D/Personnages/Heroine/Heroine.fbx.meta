@@ -189,7 +189,12 @@ ModelImporter:
     4300000: msh_retopo
     9500000: //RootNode
     13700000: msh_retopo
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: color
+    second: {fileID: 2100000, guid: d3cfc6fe34a56ef4f8e9f7bc9c74b90b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
