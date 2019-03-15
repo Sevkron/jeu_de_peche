@@ -12,7 +12,7 @@ public class VCamVolumeTrigger : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "player")
+        if(other.tag == "Player")
         {
             CameraManager.Instance.SetVCamActive(m_VCam);
         }
