@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6ce4a05497511434e9bf47fbec4f7fa3
+guid: edd9aa2e86b34d04ca4810b3edcb5299
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -183,7 +183,7 @@ ModelImporter:
     400174: R_ToeTip_jnt
     400176: R_wrist_jnt
     400178: Root_jnt
-    7400000: Marche dans passage etroit
+    7400000: Tourne sur elle meme avec lampe
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -214,10 +214,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Marche dans passage etroit
+      name: Tourne sur elle meme avec lampe
       takeName: Take 001
       firstFrame: 1
-      lastFrame: 87
+      lastFrame: 60
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
