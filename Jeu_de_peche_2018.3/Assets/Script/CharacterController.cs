@@ -144,13 +144,6 @@ public class CharacterController : MonoBehaviour {
             v = Input.GetAxis("Vertical2");
             h2 = Input.GetAxis("Horizontal");
         }
-
-        /*float v = Input.GetAxis("Vertical");
-        float h = Input.GetAxis("Horizontal");
-
-        float v2 = Input.GetAxis("Vertical2");
-        float h2 = Input.GetAxis("Horizontal2");*/
-
         Transform camera = Camera.main.transform;
         //Transform camera = this.gameObject.transform;
         bool walk = Input.GetKey(KeyCode.LeftShift);
@@ -267,44 +260,6 @@ public class CharacterController : MonoBehaviour {
             m_Lantern.GetComponent<LanternScript>().AddFullLightIntensity();
         }
     }
-
-    /*private void Light()
-    {
-        float verticalValue;
-        float horizontalValue;
-
-        verticalValue = -Input.GetAxisRaw("Vertical2") * Time.deltaTime;
-        horizontalValue = -Input.GetAxisRaw("Horizontal") * Time.deltaTime;
-        //RotLamp(verticalValue, horizontalValue);
-        Debug.Log(Input.GetAxisRaw("Horizontal"));
-    }
-
-    private void RotLamp(float InputValueV, float InputValueH)
-    {
-        
-        TorchMovementV += InputValueV * 50f;
-        TorchMovementH += InputValueH * 50f;
-        MinMaxRangeV -= TorchMovementV;
-        MinMaxRangeH -= TorchMovementH;
-
-        if (MinMaxRangeV < 35 && MinMaxRangeV > -35)
-        {
-            m_Lantern.transform.Rotate(new Vector3(0, TorchMovementV, 0)); // CHANGER CA SI CA TOURNE PAS CORRECTEMENT // METTRE DANS LA PREMIERE CASE PTDR
-        }
-        else
-        {
-            MinMaxRangeV += TorchMovementV;
-        }
-
-        if (MinMaxRangeH < 35 && MinMaxRangeH > -35)
-        {
-            m_Lantern.transform.Rotate(new Vector3(TorchMovementH, 0, 0)); // CHANGER CA SI CA TOURNE PAS CORRECTEMENT // METTRE DANS LA PREMIERE CASE PTDR
-        }
-        else
-        {
-            MinMaxRangeH += TorchMovementH;
-        }
-    }*/
 
     public void UpdateCombustibleNum()
     {
