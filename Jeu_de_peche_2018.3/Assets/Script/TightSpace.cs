@@ -2,25 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.Playables;
 
 public class TightSpace : MonoBehaviour
 {
     private bool isInTightSpace;
     private Rigidbody playerRigidbody;
-    private Transform outsidePos;
-    private Transform insidePos;
+    public GameObject GOPlayerPos;
+    private Transform PlayerPos;
     private GameObject player;
+    private PlayableDirector betweenTwoWalls;
     // Start is called before the first frame update
     void Start()
     {
-        outsidePos = this.transform.Find("OutsidePos");
-        insidePos = this.transform.Find("InsidePos");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        betweenTwoWalls = this.GetComponent<PlayableDirector>();
+        PlayerPos = this.gameObject.transform.Find("PlayerPos");
     }
 
     private void OnTriggerEnter(Collider other)
@@ -28,28 +24,20 @@ public class TightSpace : MonoBehaviour
         if (other.tag == "Player")
         {
             player = other.gameObject;
-            isInTightSpace = player.GetComponent<CharacterController>().m_isInTightSpace;
-            playerRigidbody = player.GetComponent<Rigidbody>();
-            if (isInTightSpace == false)
-            {
-                GoesIntoTightSpace();
-            }
-            else
-            {
-                player.GetComponent<CharacterController>().m_isInTightSpace = false;
-                player.GetComponent<Animator>().SetBool("IsInTightSpace", false);
-            }
+            player.GetComponent<CharacterController>().enabled = false;
+            //player.GetComponent<Animator>().enabled = false;
+            GOPlayerPos.SetActive(true);
+            GOPlayerPos.GetComponent<PlayerCinematicOverride>().Player = player;
+            betweenTwoWalls.Play();
         }
     }
-
-    private void GoesIntoTightSpace()
+    private void OnTriggerExit(Collider other)
     {
-        player.GetComponent<CharacterController>().m_isInTightSpace = true;
-        player.GetComponent<Animator>().SetBool("IsInTightSpace", true);
-        DOTween.Sequence()
-            .Append(playerRigidbody.DOMove(outsidePos.position, 1))
-            //.Append(playerRigidbody.DORotate(outsidePos.position, 1))
-            .Append(playerRigidbody.DOMove(insidePos.position, 1));
-            //.Append(playerRigidbody.DORotate(insidePos.position, 1));
+        if (other.tag == "Player")
+        {
+            player.GetComponent<CharacterController>().enabled = true;
+            GOPlayerPos.SetActive(false);
+            //player.GetComponent<Animator>().enabled = true;
+        }
     }
 }

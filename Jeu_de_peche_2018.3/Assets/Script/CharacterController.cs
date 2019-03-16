@@ -165,13 +165,15 @@ public class CharacterController : MonoBehaviour {
         //Strafe Personnage
         //transform.position += transform.right * m_currentH * m_strafeSpeed * Time.deltaTime;
         //Rotation Personnage
-        if (m_isInTightSpace == false)
-        {
-            transform.Rotate(0, m_currentH2 * m_turnSpeed * Time.deltaTime, 0);
-        }
+        transform.Rotate(0, m_currentH2 * m_turnSpeed * Time.deltaTime, 0);
 
         m_animator.SetFloat("MoveSpeed", m_currentV + m_currentH);
         m_animator.SetFloat("TurnSpeed", m_currentH2 + m_currentV2);
+
+        if(m_isInTightSpace == true)
+        {
+            
+        }
         //JumpingAndLanding();
         UseCombustible();
         //Light();

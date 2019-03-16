@@ -32,8 +32,8 @@ public class Event_Child2 : MonoBehaviour
         }
         else if (other.tag == "Player")
         {
-            Player.transform.position = gm.lastCheckPointPos;
             gameObject.SetActive(false);
+            Player.GetComponent<Animator>().SetBool("Has Lantern", false);
             gm.GetComponent<GameMaster>().Death();
 
             if(m_Event_With_Combustible== true)

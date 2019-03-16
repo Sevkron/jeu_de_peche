@@ -97,9 +97,7 @@ public class Fear_Manager : MonoBehaviour
             defaultSnapshot.TransitionTo(2f);
             //GetComponentInParent
             Debug.Log("You Dead");
-            this.transform.position = gm.lastCheckPointPos;
             this.GetComponent<CharacterController>().m_invertJoysticks = this.GetComponent<CharacterController>().m_invertJoysticksPlayerOption;
-            m_currentFearLevel = minFear;
             gm.GetComponent<GameMaster>().Death();
         }
         else
