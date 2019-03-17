@@ -51,6 +51,7 @@ public class CharacterController : MonoBehaviour {
     private bool maxLampUp, maxLampDown;
     public int combustibleNum = 2;
     public Text m_UICombustible;
+    private bool LanternActive;
 
     private float TorchMovementV;
     private float TorchMovementH;
@@ -113,6 +114,7 @@ public class CharacterController : MonoBehaviour {
 	void Update () {
         TorchMovementV = 0;
         m_animator.SetBool("Grounded", m_isGrounded);
+        LanternActive = gameObject.GetComponent<Animator>().GetBool("Has Lantern");
 
         switch(m_controlMode)
         {
@@ -247,7 +249,7 @@ public class CharacterController : MonoBehaviour {
 
     public void UseCombustible()
     {
-        if(Input.GetButtonDown("Consumable") && combustibleNum > 0)
+        if(Input.GetButtonDown("Consumable") && combustibleNum > 0 && LanternActive == true)
         {
             m_Lantern.GetComponent<LanternScript>().AddLightIntensity();
             combustibleNum--;
@@ -257,7 +259,7 @@ public class CharacterController : MonoBehaviour {
 
     public void RechargeLamp()
     {
-        if (Input.GetButtonDown("Consumable"))
+        if (Input.GetButtonDown("Consumable") && LanternActive == true)
         {
             m_Lantern.GetComponent<LanternScript>().AddFullLightIntensity();
         }
