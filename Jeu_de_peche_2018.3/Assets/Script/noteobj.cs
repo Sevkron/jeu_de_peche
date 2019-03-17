@@ -10,6 +10,7 @@ public class noteobj : MonoBehaviour
     public int m_numberinArray;
     public GameObject m_Diary;
     private bool NotePrise;
+    private bool BookActive = false;
 
     private void Start()
     {
@@ -21,12 +22,17 @@ public class noteobj : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         NotePrise = true;
+        BookActive = DiaryButton.GetComponent<Diary_Pause_Menu>().DiaryStartActive;
     }
 
     private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player" && Input.GetButton("Interact") && NotePrise == true)
         {
+            if(BookActive == false)
+            {
+                DiaryButton.GetComponent<Diary_Pause_Menu>().DiaryStartActive = true;
+            }
             NotePrise = false;
             StartCoroutine(WaitAnimEnd());
         }
