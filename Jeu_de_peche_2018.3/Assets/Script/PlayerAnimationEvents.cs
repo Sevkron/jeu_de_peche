@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class PlayerAnimationEvents : MonoBehaviour
 {
+    public bool m_IsWood = false;
     [SerializeField]
     private AudioClip[] woodClips;
     [SerializeField]
     private AudioClip[] snowClips;
-    [SerializeField]
-    private AudioClip[] dirtClips;
 
     public AudioClip sfxPickup;
 
@@ -17,14 +16,12 @@ public class PlayerAnimationEvents : MonoBehaviour
 
     private CharacterController characterController;
     private GameMaster gm;
-    //private TerrainDetector terrainDetector;
 
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
         characterController = this.GetComponent<CharacterController>();
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
-        //terrainDetector = new TerrainDetector();
     }
 
     private void WaitForAnimStart()
@@ -56,21 +53,13 @@ public class PlayerAnimationEvents : MonoBehaviour
 
     private AudioClip GetRandomStepClip()
     {
-        return snowClips[UnityEngine.Random.Range(0, snowClips.Length)];
-
-        //DetectTerrain
-        /*int terrainTextureIndex = terrainDetector.GetActiveTerrainTextureIdx(transform.position);
-
-        switch (terrainTextureIndex)
+        if(m_IsWood == true)
         {
-            case 0:
-                return woodClips[UnityEngine.Random.Range(0, woodClips.Length)];
-            case 1:
-                return snowClips[UnityEngine.Random.Range(0, snowClips.Length)];
-            case 2:
-            default:
-                return dirtClips[UnityEngine.Random.Range(0, dirtClips.Length)];
-        }*/
-
+            return woodClips[UnityEngine.Random.Range(0, woodClips.Length)];
+        }
+        else
+        {
+            return snowClips[UnityEngine.Random.Range(0, snowClips.Length)];
+        }
     }
 }
