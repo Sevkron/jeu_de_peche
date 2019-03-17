@@ -41,7 +41,6 @@ public class GameMaster : MonoBehaviour
     public void Respawn()
     {
         Player.transform.position = lastCheckPointPos;
-        
         playerAnim.SetTrigger("Respawn");
         Player.GetComponent<CharacterController>().enabled = true;
     }

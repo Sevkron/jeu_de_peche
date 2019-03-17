@@ -17,6 +17,11 @@ public class CheckPoint : MonoBehaviour
     {
         if(other.tag == "Player")
         {
+            var currentFear = other.gameObject.GetComponent<Fear_Manager>().m_currentFearLevel;
+            if(currentFear >= 50)
+            {
+                other.gameObject.GetComponent<Fear_Manager>().m_currentFearLevel = 50;
+            }
             gm.lastCheckPointPos = transform.position;
             Sparkle.Play();
         }
