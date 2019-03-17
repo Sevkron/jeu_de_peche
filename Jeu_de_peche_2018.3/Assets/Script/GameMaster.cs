@@ -36,7 +36,6 @@ public class GameMaster : MonoBehaviour
         Player.GetComponent<CharacterController>().enabled = false;
         Player.GetComponent<Fear_Manager>().m_currentFearLevel = 0;
         GetComponent<AudioSource>().PlayOneShot(deathSFX);
-
         Player.transform.position = lastCheckPointPos;
         playerAnim.SetTrigger("Respawn");
         Player.GetComponent<CharacterController>().enabled = true;
