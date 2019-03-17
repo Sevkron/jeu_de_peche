@@ -23,6 +23,7 @@ public class Combustible : MonoBehaviour
                 gameObject.GetComponent<SphereCollider>().enabled = false;
                 player.transform.GetComponent<CharacterController>().combustibleNum++;
                 player.transform.GetComponent<CharacterController>().UpdateCombustibleNum();
+                player.GetComponent<Animator>().SetTrigger("Pickup");
             }
         }
     }
