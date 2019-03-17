@@ -7,24 +7,38 @@ using UnityEngine;
 public class Combustible : MonoBehaviour
 {
     private bool MeshRend;
+    private GameObject Player;
+
+    private void Start()
+    {
+        Player = GameObject.FindGameObjectWithTag("Player");
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        MeshRend = gameObject.GetComponent<MeshRenderer>().enabled;
+    }
 
     private void OnTriggerStay(Collider other)
     {
-        MeshRend = gameObject.GetComponent<MeshRenderer>().enabled;
-
         if (other.tag == "Player" && MeshRend == true)
         {
-            var player = other.gameObject;
-            //var ch = player.transform.GetComponent<CharacterController>().combustibleNum;
             if (Input.GetButton("Interact"))
             {
-                //gameObject.SetActive(false);
-                gameObject.GetComponent<MeshRenderer>().enabled = false;
-                gameObject.GetComponent<SphereCollider>().enabled = false;
-                player.transform.GetComponent<CharacterController>().combustibleNum++;
-                player.transform.GetComponent<CharacterController>().UpdateCombustibleNum();
-                player.GetComponent<Animator>().SetTrigger("Pickup");
+                MeshRend = false;
+                StartCoroutine(WaitAnimEnd());
             }
         }
+    }
+    IEnumerator WaitAnimEnd()
+    {
+        Player.GetComponent<Animator>().SetTrigger("Pickup");
+        Player.GetComponent<CharacterController>().enabled = false;
+        yield return new WaitForSecondsRealtime(2.7f);
+        gameObject.SetActive(false);
+        Player.transform.GetComponent<CharacterController>().combustibleNum++;
+        Player.transform.GetComponent<CharacterController>().UpdateCombustibleNum();
+        Player.GetComponent<CharacterController>().enabled = true;
     }
 }

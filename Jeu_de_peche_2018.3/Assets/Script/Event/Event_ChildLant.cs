@@ -10,6 +10,8 @@ public class Event_ChildLant : MonoBehaviour
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
+        Lantern = Player.transform.Find("Lant").gameObject.transform.Find("HeroLantern").gameObject;
+        Lantern.SetActive(false);
     }
 
     private void OnTriggerStay(Collider other)
@@ -17,11 +19,8 @@ public class Event_ChildLant : MonoBehaviour
         if (other.tag == "Player" && Input.GetButton("Interact"))
         {
             gameObject.SetActive(false);
-            //Lantern = Player.transform.Find("Lantern").gameObject;
-            Lantern = Player.transform.Find("Lant").gameObject.transform.Find("HeroLantern").gameObject;
             Lantern.SetActive(true);
             Player.GetComponent<Animator>().SetBool("Has Lantern", true);
-            //Player.GetComponent<IKControl>().enabled = true;
         }
     }
 }

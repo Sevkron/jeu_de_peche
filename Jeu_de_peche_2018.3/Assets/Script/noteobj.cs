@@ -9,6 +9,7 @@ public class noteobj : MonoBehaviour
     private GameObject Player;
     public int m_numberinArray;
     public GameObject m_Diary;
+    private bool NotePrise;
 
     private void Start()
     {
@@ -17,23 +18,34 @@ public class noteobj : MonoBehaviour
         Player = GameObject.FindGameObjectWithTag("Player");
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        NotePrise = true;
+    }
+
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player" && Input.GetButton("Interact"))
+        if (other.tag == "Player" && Input.GetButton("Interact") && NotePrise == true)
         {
-            m_Diary.SetActive(true);
-            Player.GetComponent<CharacterController>().enabled = false;
-
-            Book.GetComponent<Journal_test_Leo>().t_notes[m_numberinArray].SetActive(true);
-            Book.GetComponent<Journal_test_Leo>().t_notes[m_numberinArray].transform.parent = Book.GetComponent<Journal_test_Leo>().children[Book.GetComponent<Journal_test_Leo>().index].transform;
-            Book.GetComponent<Journal_test_Leo>().index++;
-            Book.GetComponent<Journal_test_Leo>().t_notes[m_numberinArray].transform.localPosition = new Vector3(100, 0, 0);
-
-            DiaryButton.GetComponent<Diary_Pause_Menu>().ButtonDiary.SetActive(true);
-            DiaryButton.GetComponent<Diary_Pause_Menu>().DiaryCanvasActive = true;
-            gameObject.SetActive(false);
-            Player.GetComponent<Animator>().SetTrigger("Pickup");
+            NotePrise = false;
+            StartCoroutine(WaitAnimEnd());
         }
     } 
+    IEnumerator WaitAnimEnd()
+    {
+        Player.GetComponent<Animator>().SetTrigger("Pickup");
+        Player.GetComponent<CharacterController>().enabled = false;
+        yield return new WaitForSecondsRealtime(2.7f);
+        m_Diary.SetActive(true);
+        
+        Book.GetComponent<Journal_test_Leo>().t_notes[m_numberinArray].SetActive(true);
+        Book.GetComponent<Journal_test_Leo>().t_notes[m_numberinArray].transform.parent = Book.GetComponent<Journal_test_Leo>().children[Book.GetComponent<Journal_test_Leo>().index].transform;
+        Book.GetComponent<Journal_test_Leo>().index++;
+        Book.GetComponent<Journal_test_Leo>().t_notes[m_numberinArray].transform.localPosition = new Vector3(100, 0, 0);
+
+        DiaryButton.GetComponent<Diary_Pause_Menu>().ButtonDiary.SetActive(true);
+        DiaryButton.GetComponent<Diary_Pause_Menu>().DiaryCanvasActive = true;
+        gameObject.SetActive(false);
+    }
 }
 
