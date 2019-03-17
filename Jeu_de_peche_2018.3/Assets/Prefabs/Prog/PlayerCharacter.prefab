@@ -2395,6 +2395,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837fe9d8191b8f8428f54c1e19c17d9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  woodClips: []
+  snowClips:
+  - {fileID: 8300000, guid: 7cdf924d7a979e648aee676930403219, type: 3}
+  - {fileID: 8300000, guid: 26d5ee462e39dbc41b6a68c885839e6a, type: 3}
+  - {fileID: 8300000, guid: 1ced862abba04e64faa0274a5b24f0c6, type: 3}
+  - {fileID: 8300000, guid: 03dabdfb703ecf845ab73f9e31f89767, type: 3}
+  dirtClips: []
 --- !u!82 &2828010714444321663
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2452,7 +2459,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
