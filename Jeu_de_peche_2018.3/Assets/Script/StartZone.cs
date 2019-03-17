@@ -16,6 +16,7 @@ public class StartZone : MonoBehaviour
     void Update()
     {
         BookActive = Player.GetComponentInChildren<Diary_Pause_Menu>().DiaryStartActive;
+        Player.GetComponent<Fear_Manager>().m_currentFearLevel = 0;
         Lamp = Player.GetComponent<Animator>().GetBool("Has Lantern");
 
         if(BookActive == true && Lamp == true)
