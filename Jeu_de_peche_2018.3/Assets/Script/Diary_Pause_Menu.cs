@@ -7,6 +7,7 @@ public class Diary_Pause_Menu : MonoBehaviour
 {
     public GameObject m_CanvasDiary;
     public bool DiaryCanvasActive = false;
+    public bool DiaryStartActive;
 
     public GameObject ButtonDiary;
     public GameObject m_NextButton;
@@ -26,13 +27,14 @@ public class Diary_Pause_Menu : MonoBehaviour
         MenuPause = GameObject.FindGameObjectWithTag("Pause");
         MenuPause.SetActive(false);
         eventSystem = EventSystem.current;
+        DiaryStartActive = false;
     }
 
     void Update()
     {
         
 
-        if (Input.GetButton("Diary") && DiaryCanvasActive == false && PauseCanvasActive == false)
+        if (Input.GetButton("Diary") && DiaryCanvasActive == false && PauseCanvasActive == false && DiaryStartActive == true)
             {
                 eventSystem.SetSelectedGameObject(m_NextButton, new BaseEventData(eventSystem));
                 m_CanvasDiary.SetActive(true);
