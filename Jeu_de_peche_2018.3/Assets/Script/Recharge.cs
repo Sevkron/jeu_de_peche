@@ -2,29 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Combustible : MonoBehaviour
+public class Recharge : MonoBehaviour
 {
-    private bool MeshRend;
     private GameObject Player;
-
+    private ParticleSystem Sparkle;
+    private bool isActive = false;
     private void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
-
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        MeshRend = gameObject.GetComponent<MeshRenderer>().enabled;
+        Sparkle = gameObject.GetComponentInChildren<ParticleSystem>();
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player" && MeshRend == true)
+        Debug.Log("Player is in");
+        if (other.tag == "Player")
         {
-            if (Input.GetButton("Interact"))
+            if (Input.GetButton("Interact") && isActive == false)
             {
-                MeshRend = false;
+                isActive = true;
                 StartCoroutine(WaitAnimEnd());
             }
         }
@@ -34,9 +30,9 @@ public class Combustible : MonoBehaviour
         Player.GetComponent<Animator>().SetTrigger("Pickup");
         Player.GetComponent<CharacterController>().enabled = false;
         yield return new WaitForSecondsRealtime(2.7f);
-        gameObject.SetActive(false);
-        Player.transform.GetComponent<CharacterController>().combustibleNum++;
-        Player.transform.GetComponent<CharacterController>().UpdateCombustibleNum();
+        Sparkle.Play();
+        isActive = false;
+        Player.GetComponent<CharacterController>().RechargeLamp();
         Player.GetComponent<CharacterController>().enabled = true;
     }
 }
