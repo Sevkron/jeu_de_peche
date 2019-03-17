@@ -269,8 +269,8 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.28759894
-        functionName: Step
+      - time: 0.99648196
+        functionName: WaitForAnimEnd
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0

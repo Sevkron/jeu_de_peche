@@ -31,12 +31,14 @@ public class GameMaster : MonoBehaviour
 
     public void Death()
     {
-        //Put effects from fear manager here
         playerAnim.SetTrigger("Dead");
         Player.GetComponent<CharacterController>().enabled = false;
         GetComponent<AudioSource>().PlayOneShot(deathSFX);
-        //particule de smoke
+        //particule de smoke 
+    }
 
+    public void Respawn()
+    {
         Player.transform.position = lastCheckPointPos;
         Player.GetComponent<Fear_Manager>().m_currentFearLevel = 0;
         playerAnim.SetTrigger("Respawn");

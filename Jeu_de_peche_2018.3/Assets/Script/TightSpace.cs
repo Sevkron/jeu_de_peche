@@ -27,7 +27,7 @@ public class TightSpace : MonoBehaviour
             player.GetComponent<CharacterController>().enabled = false;
             //player.GetComponent<Animator>().enabled = false;
             GOPlayerPos.SetActive(true);
-            GOPlayerPos.GetComponent<PlayerCinematicOverride>().Player = player;
+            //GOPlayerPos.GetComponent<PlayerCinematicOverride>().Player = player;
             betweenTwoWalls.Play();
         }
     }

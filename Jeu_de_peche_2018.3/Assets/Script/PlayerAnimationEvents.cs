@@ -11,27 +11,50 @@ public class PlayerAnimationEvents : MonoBehaviour
     [SerializeField]
     private AudioClip[] dirtClips;
 
+    private AudioClip sfxPickup;
+
     private AudioSource audioSource;
+
+    private CharacterController characterController;
+    private GameMaster gm;
     //private TerrainDetector terrainDetector;
 
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
+        characterController = this.GetComponent<CharacterController>();
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         //terrainDetector = new TerrainDetector();
+    }
+
+    private void WaitForAnimStart()
+    {
+        characterController.enabled = false;
+    }
+
+    private void WaitForRespawn()
+    {
+        gm.Respawn();
+    }
+
+    private void WaitForAnimEnd()
+    {
+        characterController.enabled = true;
     }
 
     private void SFXPickup()
     {
-
+        AudioClip clip = sfxPickup;
+        audioSource.PlayOneShot(clip);
     }
 
     private void Step()
     {
-        AudioClip clip = GetRandomClip();
+        AudioClip clip = GetRandomStepClip();
         audioSource.PlayOneShot(clip);
     }
 
-    private AudioClip GetRandomClip()
+    private AudioClip GetRandomStepClip()
     {
         return snowClips[UnityEngine.Random.Range(0, snowClips.Length)];
 
