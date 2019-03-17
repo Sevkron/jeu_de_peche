@@ -11,7 +11,7 @@ public class PlayerAnimationEvents : MonoBehaviour
     [SerializeField]
     private AudioClip[] dirtClips;
 
-    private AudioClip sfxPickup;
+    public AudioClip sfxPickup;
 
     private AudioSource audioSource;
 

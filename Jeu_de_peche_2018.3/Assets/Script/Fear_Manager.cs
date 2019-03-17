@@ -70,6 +70,7 @@ public class Fear_Manager : MonoBehaviour
             var volume = PostProcessManager.instance.QuickVolume(gameObject.layer, 100f, vignette);
             volume.weight = 0f;
 
+            DOTween.Init();
             DOTween.Sequence()
                 .Append(DOTween.To(() => volume.weight, x => volume.weight = x, 1f, 2000f));
         }
