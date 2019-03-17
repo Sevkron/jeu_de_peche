@@ -9,7 +9,7 @@ public class GameMaster : MonoBehaviour
     private GameObject Player;
     public AudioClip deathSFX;
     private Animator playerAnim;
-    public GameObject m_DeathScreen;
+    private GameObject m_DeathScreen;
 
     private void Awake()
     {
@@ -37,15 +37,15 @@ public class GameMaster : MonoBehaviour
         Player.GetComponent<CharacterController>().enabled = false;
         GetComponent<AudioSource>().PlayOneShot(deathSFX);
         Player.GetComponent<Fear_Manager>().m_currentFearLevel = 0;
-        m_DeathScreen.SetActive(true);
+        m_DeathScreen.GetComponent<Animator>().SetTrigger("DeathScreenActivate");
         //particule de smoke 
     }
 
     public void Respawn()
     {
-        m_DeathScreen.SetActive(false);
         Player.transform.position = lastCheckPointPos;
         playerAnim.SetTrigger("Respawn");
         Player.GetComponent<CharacterController>().enabled = true;
+        m_DeathScreen.GetComponent<Animator>().SetTrigger("DeathScreenDeactivate");
     }
 }

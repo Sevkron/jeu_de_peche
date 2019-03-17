@@ -564,7 +564,7 @@ PrefabInstance:
     - target: {fileID: 1324070650697264896, guid: 2ec266a02326b5f42aa1629244a8a49f,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ec266a02326b5f42aa1629244a8a49f, type: 3}
@@ -3488,7 +3488,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832487157}
-  m_LocalRotation: {x: 0.09863086, y: -0.24194784, z: 0.024730237, w: 0.96494645}
+  m_LocalRotation: {x: 0.09863087, y: -0.24194781, z: 0.024730235, w: 0.96494645}
   m_LocalPosition: {x: -0.697, y: 1.248, z: 6.409}
   m_LocalScale: {x: 1, y: 1, z: 1.0000002}
   m_Children:
@@ -4762,6 +4762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CanvasDiary: {fileID: 64764204}
   DiaryCanvasActive: 0
+  DiaryStartActive: 0
   ButtonDiary: {fileID: 64764203}
   m_NextButton: {fileID: 64764202}
   m_PauseButton: {fileID: 64764201}
