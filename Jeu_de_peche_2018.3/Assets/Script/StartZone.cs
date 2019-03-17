@@ -8,7 +8,7 @@ public class StartZone : MonoBehaviour
     private bool BookActive;
     private bool Lamp;
     private GameObject Player;
-    private Playable church;
+    public Playable church;
 
     void Start()
     {
