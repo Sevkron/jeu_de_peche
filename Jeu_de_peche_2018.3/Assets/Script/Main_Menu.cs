@@ -5,17 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Main_Menu : MonoBehaviour
 {
+    private GameObject player;
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
     public void Play()
     {
-        SceneManager.LoadScene("Main_Scene");
-    }
-
-    public void Gallery()
-    {
-        SceneManager.LoadScene("Gallery_Scene");
-    }
-    public void Quit()
-    {
-        Application.Quit();
+        player.GetComponent<Animator>().SetBool("HasStart", true);
+        this.gameObject.SetActive(false);
     }
 }

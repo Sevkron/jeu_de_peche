@@ -79,6 +79,11 @@ public class Pause_Menu : MonoBehaviour
         Diaryscript.GetComponent<Diary_Pause_Menu>().MenuPause.SetActive(false);
     }
 
+    public void StartGame()
+    {
+
+    }
+
     public void Quit()
     {
         Application.Quit();
