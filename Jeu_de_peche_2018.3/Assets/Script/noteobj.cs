@@ -9,8 +9,8 @@ public class noteobj : MonoBehaviour
     private GameObject Player;
     public int m_numberinArray;
     public GameObject m_Diary;
-    private bool NotePrise;
     private bool BookActive = false;
+    private bool MeshRend;
 
     private void Start()
     {
@@ -21,19 +21,19 @@ public class noteobj : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        NotePrise = true;
+        MeshRend = gameObject.GetComponent<MeshRenderer>().enabled;
         BookActive = DiaryButton.GetComponent<Diary_Pause_Menu>().DiaryStartActive;
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player" && Input.GetButton("Interact") && NotePrise == true)
+        if (other.tag == "Player" && Input.GetButton("Interact") && MeshRend == true)
         {
             if(BookActive == false)
             {
                 DiaryButton.GetComponent<Diary_Pause_Menu>().DiaryStartActive = true;
             }
-            NotePrise = false;
+            MeshRend = false;
             StartCoroutine(WaitAnimEnd());
         }
     } 
