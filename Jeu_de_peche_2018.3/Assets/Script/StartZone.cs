@@ -21,7 +21,7 @@ public class StartZone : MonoBehaviour
 
         if(BookActive == true && Lamp == true)
         {
-            //lancer anim barriere
+            gameObject.SetActive(false);
         }
     }
 }
