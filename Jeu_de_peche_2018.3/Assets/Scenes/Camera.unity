@@ -888,6 +888,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6915964090624397152, guid: 74d79f4a0dfb9334d8fe7dcad7bdc4b7,
+        type: 3}
+      propertyPath: sfxPickup
+      value: 
+      objectReference: {fileID: 8300000, guid: f8d668cfdd7d41c42998acf80cdeece1, type: 3}
     m_RemovedComponents:
     - {fileID: 7261333830164036761, guid: 74d79f4a0dfb9334d8fe7dcad7bdc4b7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 74d79f4a0dfb9334d8fe7dcad7bdc4b7, type: 3}
@@ -2122,7 +2127,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 478422349}
-  m_LocalRotation: {x: 0.039280258, y: -0.27380797, z: 0.011192967, w: 0.96091676}
+  m_LocalRotation: {x: 0.03928024, y: -0.27380797, z: 0.0111929625, w: 0.96091676}
   m_LocalPosition: {x: 7.004491, y: 4.680339, z: -9.01571}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
