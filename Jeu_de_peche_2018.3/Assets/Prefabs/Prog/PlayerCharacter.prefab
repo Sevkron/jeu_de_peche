@@ -4603,6 +4603,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5690671749929088671, guid: 4dd1cd6098dcd014995a2a1ea5ef4b2e,
+        type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5690671749929088671, guid: 4dd1cd6098dcd014995a2a1ea5ef4b2e,
+        type: 3}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5690671749929088671, guid: 4dd1cd6098dcd014995a2a1ea5ef4b2e,
+        type: 3}
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5690671749929088671, guid: 4dd1cd6098dcd014995a2a1ea5ef4b2e,
+        type: 3}
+      propertyPath: CollisionModule.collidesWith.m_Bits
+      value: 3072
+      objectReference: {fileID: 0}
+    - target: {fileID: 5690671749929088671, guid: 4dd1cd6098dcd014995a2a1ea5ef4b2e,
+        type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 28.199673
+      objectReference: {fileID: 0}
+    - target: {fileID: 5690671749929088671, guid: 4dd1cd6098dcd014995a2a1ea5ef4b2e,
+        type: 3}
+      propertyPath: ShapeModule.m_Scale.z
+      value: 32.569664
+      objectReference: {fileID: 0}
+    - target: {fileID: 5690671749929088671, guid: 4dd1cd6098dcd014995a2a1ea5ef4b2e,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4dd1cd6098dcd014995a2a1ea5ef4b2e, type: 3}
 --- !u!4 &8087078037366688175 stripped
