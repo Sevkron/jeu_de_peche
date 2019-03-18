@@ -33,7 +33,7 @@ public class Journal_test_Leo : MonoBehaviour
 
         for (int i = 0; i < 5; i++)
         {
-            for (int j = 0; j < 6; j++)
+            for (int j = 0; j < 4; j++)
             {
                 children[index] = journal.transform.GetChild(i).GetChild(j).gameObject;
                 index++;
