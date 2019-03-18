@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e99e84cc94febd448b8db45b96ddca0e
+guid: 4b0efdd435c0dff439f87f9063a8ce79
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -183,7 +183,7 @@ ModelImporter:
     400174: R_ToeTip_jnt
     400176: R_wrist_jnt
     400178: Root_jnt
-    7400000: "RUN_cycle_No_Lamp_Corrig\xE9"
+    7400000: RUN_no_lampe
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -214,10 +214,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: "RUN_cycle_No_Lamp_Corrig\xE9"
+      name: RUN_no_lampe
       takeName: Take 001
       firstFrame: 1
-      lastFrame: 16
+      lastFrame: 39
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -236,25 +236,11 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 0.043095864
-        functionName: Step
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.5215479
-        functionName: Step
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []
