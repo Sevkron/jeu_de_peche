@@ -49,7 +49,7 @@ public class CharacterController : MonoBehaviour {
     public GameObject m_Lantern;
     private float rotLampVertical;
     private bool maxLampUp, maxLampDown;
-    public int combustibleNum = 2;
+    public int combustibleNum = 0;
     public Text m_UICombustible;
     private bool LanternActive;
 

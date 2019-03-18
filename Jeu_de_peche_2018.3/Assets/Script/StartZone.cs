@@ -8,7 +8,7 @@ public class StartZone : MonoBehaviour
     private bool BookActive;
     private bool Lamp;
     private GameObject Player;
-    public Playable church;
+    public PlayableDirector church;
 
     void Start()
     {
@@ -29,6 +29,10 @@ public class StartZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        church.Play();
+        if (other.tag == "Player")
+        {
+            church.Play();
+            Destroy(this.gameObject);
+        }
     }
 }

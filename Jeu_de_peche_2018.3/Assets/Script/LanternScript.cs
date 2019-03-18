@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LanternScript : MonoBehaviour
 {
-    private float maxLanternLight = 50f;
+    private float maxLanternLight = 100f;
     private float minLanternLight = 0f;
     public float currentLanternLight;
     private Light lanternLight;
@@ -40,7 +40,7 @@ public class LanternScript : MonoBehaviour
 
     public void AddLightIntensity()
     {
-        currentLanternLight += 25f;
+        currentLanternLight += 50f;
     }
     public void AddFullLightIntensity()
     {
