@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class StartZone : MonoBehaviour
 {
     private bool BookActive;
     private bool Lamp;
     private GameObject Player;
+    public PlayableDirector church;
 
     void Start()
     {
@@ -21,7 +23,16 @@ public class StartZone : MonoBehaviour
 
         if(BookActive == true && Lamp == true)
         {
-            gameObject.SetActive(false);
+            gameObject.GetComponent<BoxCollider>().isTrigger = true;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            church.Play();
+            Destroy(this.gameObject);
         }
     }
 }

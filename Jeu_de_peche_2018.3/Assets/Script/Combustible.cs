@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 public class Combustible : MonoBehaviour
 {
     private bool MeshRend;

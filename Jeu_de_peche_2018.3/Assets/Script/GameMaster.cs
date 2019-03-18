@@ -9,7 +9,7 @@ public class GameMaster : MonoBehaviour
     private GameObject Player;
     public AudioClip deathSFX;
     private Animator playerAnim;
-    private GameObject m_DeathScreen;
+    public GameObject m_DeathScreen;
 
     private void Awake()
     {
@@ -28,7 +28,6 @@ public class GameMaster : MonoBehaviour
     {
         Player = GameObject.FindGameObjectWithTag("Player");
         playerAnim = Player.GetComponent<Animator>();
-        m_DeathScreen = GameObject.FindGameObjectWithTag("CanvasBook").gameObject.transform.Find("DeathScreen").gameObject;
     }
 
     public void Death()

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
-using UnityEditor.Rendering.PostProcessing;
+using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
