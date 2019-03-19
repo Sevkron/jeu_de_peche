@@ -28,6 +28,10 @@ public class Pause_Menu : MonoBehaviour
 
     private GameObject Diaryscript;
 
+    private bool isFullscreen;
+    private int widthResolution;
+    private int lengthResolution;
+
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -79,9 +83,15 @@ public class Pause_Menu : MonoBehaviour
         Diaryscript.GetComponent<Diary_Pause_Menu>().MenuPause.SetActive(false);
     }
 
-    public void StartGame()
+    public void ChangeFullscreen()
     {
+        isFullscreen = !isFullscreen;
+        Screen.SetResolution(widthResolution, lengthResolution, isFullscreen);
+    }
 
+    public void ChangeResolution()
+    {
+        Screen.SetResolution(800, 600, isFullscreen);
     }
 
     public void Quit()
