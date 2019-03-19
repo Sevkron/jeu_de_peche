@@ -3118,7 +3118,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: At the Edge of the Lake
+  m_Text: At the Lake's Edge
 --- !u!222 &787616132
 CanvasRenderer:
   m_ObjectHideFlags: 0
