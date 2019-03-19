@@ -594,7 +594,7 @@ Light:
   m_Type: 0
   m_Color: {r: 1, g: 0.5615012, b: 0, a: 1}
   m_Intensity: 3.9788735
-  m_Range: 5
+  m_Range: 50
   m_SpotAngle: 109.5
   m_CookieSize: 10
   m_Shadows:
@@ -664,7 +664,7 @@ MonoBehaviour:
   displayLightIntensity: 50
   displayAreaLightEmissiveMesh: 0
   lightLayers: 1
-  shadowNearPlane: 0.1
+  shadowNearPlane: 0.4
   shadowSoftness: 0.5
   blockerSampleCount: 24
   filterSampleCount: 16
@@ -3734,7 +3734,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6792453, g: 0.4596373, b: 0, a: 1}
   m_Intensity: 0.15915494
   m_Range: 10
   m_SpotAngle: 30
@@ -3800,7 +3800,7 @@ MonoBehaviour:
   maxSmoothness: 0.99
   applyRangeAttenuation: 1
   useOldInspector: 0
-  useVolumetric: 1
+  useVolumetric: 0
   featuresFoldout: 1
   showAdditionalSettings: 0
   displayLightIntensity: 2
@@ -4040,7 +4040,7 @@ MonoBehaviour:
   maxSmoothness: 1
   applyRangeAttenuation: 1
   useOldInspector: 0
-  useVolumetric: 1
+  useVolumetric: 0
   featuresFoldout: 1
   showAdditionalSettings: 0
   displayLightIntensity: 0.5
@@ -4123,7 +4123,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3926605553680648363}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.538, z: 0}
+  m_LocalPosition: {x: 0, y: 1.371, z: 0}
   m_LocalScale: {x: 1.0000017, y: 1.0000017, z: 1.0000017}
   m_Children: []
   m_Father: {fileID: 1399151205}
@@ -4139,7 +4139,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9716981, g: 0.8269259, b: 0.5821022, a: 1}
   m_Intensity: 15.915494
   m_Range: 20
   m_SpotAngle: 30
@@ -4301,7 +4301,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7670684704105639475}
   m_LocalRotation: {x: -0.016488345, y: 0.71258795, z: 0.014834564, w: 0.70123214}
-  m_LocalPosition: {x: 0.18812755, y: -0.024065845, z: -0.0031214454}
+  m_LocalPosition: {x: 0.141, y: -0.021, z: -0.002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 269413818}
@@ -4317,7 +4317,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.61329776, b: 0.19339621, a: 1}
   m_Intensity: 0.15915494
   m_Range: 10
   m_SpotAngle: 30
@@ -4379,11 +4379,11 @@ MonoBehaviour:
   shapeWidth: 0.5
   shapeHeight: 0.5
   aspectRatio: 1
-  shapeRadius: 0
+  shapeRadius: 0.27
   maxSmoothness: 0.99
   applyRangeAttenuation: 1
   useOldInspector: 0
-  useVolumetric: 1
+  useVolumetric: 0
   featuresFoldout: 1
   showAdditionalSettings: 0
   displayLightIntensity: 2
