@@ -24,7 +24,7 @@ public class noteobj : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        MeshRend = gameObject.GetComponent<MeshRenderer>().enabled;
+        MeshRend = gameObject.GetComponent<Renderer>().enabled;
         BookActive = DiaryButton.GetComponent<Diary_Pause_Menu>().DiaryStartActive;
     }
 
