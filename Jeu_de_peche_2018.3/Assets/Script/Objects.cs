@@ -15,7 +15,7 @@ public class Objects : MonoBehaviour
             if (startTime >= 4.0)
             {
                 ResetTimer();
-                other.gameObject.GetComponent<MeshRenderer>().enabled = true;
+                other.gameObject.GetComponent<Renderer>().enabled = true;
                 other.gameObject.GetComponentInChildren<ParticleSystem>().Play();
             }
         }
