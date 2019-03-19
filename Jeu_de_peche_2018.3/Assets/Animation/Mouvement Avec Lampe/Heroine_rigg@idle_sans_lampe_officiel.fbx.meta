@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ad756dc9a770665428a61c8e9adbbd31
+guid: fcd4b6df00cb85541a28b1a7053222a7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,8 +8,8 @@ ModelImporter:
     100004: Back_2_jnt
     100006: Back_3_jnt
     100008: Head_jnt
-    100010: //RootNode
-    100012: Heroine_rigg
+    100010: Heroine_rigg
+    100012: //RootNode
     100014: L_ankle_jnt
     100016: L_arm_jnt
     100018: L_clavicle_jnt
@@ -98,8 +98,8 @@ ModelImporter:
     400004: Back_2_jnt
     400006: Back_3_jnt
     400008: Head_jnt
-    400010: //RootNode
-    400012: Heroine_rigg
+    400010: Heroine_rigg
+    400012: //RootNode
     400014: L_ankle_jnt
     400016: L_arm_jnt
     400018: L_clavicle_jnt
@@ -183,7 +183,7 @@ ModelImporter:
     400174: R_ToeTip_jnt
     400176: R_wrist_jnt
     400178: Root_jnt
-    7400000: "idle_sans_hache_corrig\xE9"
+    7400000: idle_sans_lampe_officiel
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -214,7 +214,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: "idle_sans_hache_corrig\xE9"
+      name: idle_sans_lampe_officiel
       takeName: Take 001
       firstFrame: 1
       lastFrame: 120
