@@ -23,8 +23,14 @@ public class Journal_test_Leo : MonoBehaviour
 
     //index nb enfants dans cases du tableau
 
+    public AudioClip SFXSelected;
+    public AudioClip SFXValidated;
+    private AudioSource UiAudioSource;
+
+
     void Start()
     {
+        UiAudioSource = this.gameObject.GetComponent<AudioSource>();
         p_index = 0;
         //setup des tableaux (emplacements + notes + nb pages)
         children = new GameObject[30];
@@ -52,98 +58,6 @@ public class Journal_test_Leo : MonoBehaviour
             t_pages[i] = journal.transform.GetChild(i).gameObject;
         }
     }
-    
-    /*void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Keypad1))
-        {
-            t_notes[0].SetActive(true);
-            t_notes[0].transform.parent = children[index].transform;
-            index++;
-            t_notes[0].transform.localPosition = new Vector3(100, 0, 0);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Keypad2))
-        {
-            Debug.Log("oui");
-            t_notes[1].SetActive(true);
-            t_notes[1].transform.parent = children[index].transform;
-            index++;
-            t_notes[1].transform.localPosition = new Vector3(100, 0, 0);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Keypad3))
-        {
-            Debug.Log("oui");
-            t_notes[2].SetActive(true);
-            t_notes[2].transform.parent = children[index].transform;
-            index++;
-            t_notes[2].transform.localPosition = new Vector3(100, 0, 0);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Keypad4))
-        {
-            Debug.Log("oui");
-            t_notes[3].SetActive(true);
-            t_notes[3].transform.parent = children[index].transform;
-            index++;
-            t_notes[3].transform.localPosition = new Vector3(100, 0, 0);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Keypad5))
-        {
-            Debug.Log("oui");
-            t_notes[4].SetActive(true);
-            t_notes[4].transform.parent = children[index].transform;
-            index++;
-            t_notes[4].transform.localPosition = new Vector3(100, 0, 0);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Keypad6))
-        {
-            Debug.Log("oui");
-            t_notes[5].SetActive(true);
-            t_notes[5].transform.parent = children[index].transform;
-            index++;
-            t_notes[5].transform.localPosition = new Vector3(100, 0, 0);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Keypad7))
-        {
-            Debug.Log("oui");
-            t_notes[6].SetActive(true);
-            t_notes[6].transform.parent = children[index].transform;
-            index++;
-            t_notes[6].transform.localPosition = new Vector3(100, 0, 0);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Keypad8))
-        {
-            Debug.Log("oui");
-            t_notes[7].SetActive(true);
-            t_notes[7].transform.parent = children[index].transform;
-            index++;
-            t_notes[7].transform.localPosition = new Vector3(100, 0, 0);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Keypad9))
-        {
-            Debug.Log("oui");
-            t_notes[8].SetActive(true);
-            t_notes[8].transform.parent = children[index].transform;
-            index++;
-            t_notes[8].transform.localPosition = new Vector3(100, 0, 0);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Keypad0))
-        {
-            Debug.Log("oui");
-            t_notes[9].SetActive(true);
-            t_notes[9].transform.parent = children[index].transform;
-            index++;
-            t_notes[9].transform.localPosition = new Vector3(100, 0, 0);
-        }
-    }*/
 
     public void TurnLeft()
     {
@@ -166,4 +80,15 @@ public class Journal_test_Leo : MonoBehaviour
                 Debug.Log("On tourne à droite !");
             }
         }
+    public void PlaySoundSelected()
+    {
+        UiAudioSource.PlayOneShot(SFXSelected);
+    }
+
+    public void PlaySoundValidated()
+    {
+        UiAudioSource.PlayOneShot(SFXValidated);
+    }
+
+
 }
