@@ -58,7 +58,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519009663}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.9787276, y: 3.22495, z: -3.36}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
@@ -170,15 +170,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 23063982, guid: 8075c0ccec16e554ca88c1bdb76ce754, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.075
       objectReference: {fileID: 0}
     - target: {fileID: 23063982, guid: 8075c0ccec16e554ca88c1bdb76ce754, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.085
       objectReference: {fileID: 0}
     - target: {fileID: 23063982, guid: 8075c0ccec16e554ca88c1bdb76ce754, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.122
       objectReference: {fileID: 0}
     - target: {fileID: 23063982, guid: 8075c0ccec16e554ca88c1bdb76ce754, type: 3}
       propertyPath: m_LocalRotation.x
@@ -212,9 +212,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23063982, guid: 8075c0ccec16e554ca88c1bdb76ce754, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.043347016
+      objectReference: {fileID: 0}
+    - target: {fileID: 23063982, guid: 8075c0ccec16e554ca88c1bdb76ce754, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.043347016
+      objectReference: {fileID: 0}
+    - target: {fileID: 23063982, guid: 8075c0ccec16e554ca88c1bdb76ce754, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.043347016
+      objectReference: {fileID: 0}
     - target: {fileID: 23063981, guid: 8075c0ccec16e554ca88c1bdb76ce754, type: 3}
-      propertyPath: looping
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23063981, guid: 8075c0ccec16e554ca88c1bdb76ce754, type: 3}
+      propertyPath: scalingMode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23063981, guid: 8075c0ccec16e554ca88c1bdb76ce754, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 15.89
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8075c0ccec16e554ca88c1bdb76ce754, type: 3}

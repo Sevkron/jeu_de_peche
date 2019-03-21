@@ -43,6 +43,8 @@ public class Pause_Menu : MonoBehaviour
     {
         Diaryscript.GetComponent<Diary_Pause_Menu>().MenuPause.SetActive(false);
         m_optionsPanel.SetActive(true);
+        player.GetComponentInChildren<Diary_Pause_Menu>().OptionCanvasActive = true;
+        player.GetComponentInChildren<Diary_Pause_Menu>().PauseCanvasActive = false;
         eventSystem.SetSelectedGameObject(m_OptionButton, new BaseEventData(eventSystem));
     }
 
@@ -67,6 +69,8 @@ public class Pause_Menu : MonoBehaviour
         m_optionsPanel.SetActive(false);
         eventSystem.SetSelectedGameObject(m_PauseButton, new BaseEventData(eventSystem));
         Diaryscript.GetComponent<Diary_Pause_Menu>().MenuPause.SetActive(true);
+        player.GetComponentInChildren<Diary_Pause_Menu>().PauseCanvasActive = true;
+        player.GetComponentInChildren<Diary_Pause_Menu>().OptionCanvasActive = false;
     }
 
     public void InvertJoysticks()

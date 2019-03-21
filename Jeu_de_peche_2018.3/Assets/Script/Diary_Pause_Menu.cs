@@ -12,11 +12,15 @@ public class Diary_Pause_Menu : MonoBehaviour
     public GameObject ButtonDiary;
     public GameObject m_NextButton;
     public GameObject m_PauseButton;
+    public GameObject m_StartButton;
 
     public GameObject MenuPause;
     public bool PauseCanvasActive = false;
+    public bool OptionCanvasActive = false;
 
     private EventSystem eventSystem;
+
+    private bool HasStarted;
 
 
 
@@ -34,7 +38,7 @@ public class Diary_Pause_Menu : MonoBehaviour
     {
         
 
-        if (Input.GetButton("Diary") && DiaryCanvasActive == false && PauseCanvasActive == false && DiaryStartActive == true)
+        if (Input.GetButton("Diary") && DiaryCanvasActive == false && PauseCanvasActive == false && DiaryStartActive == true && OptionCanvasActive == false)
             {
                 eventSystem.SetSelectedGameObject(m_NextButton, new BaseEventData(eventSystem));
                 m_CanvasDiary.SetActive(true);
@@ -51,7 +55,7 @@ public class Diary_Pause_Menu : MonoBehaviour
                  DiaryCanvasActive = false;
         }
 
-        if (Input.GetButton("Pause") && PauseCanvasActive == false && DiaryCanvasActive == false)
+        if (Input.GetButton("Pause") && PauseCanvasActive == false && DiaryCanvasActive == false && OptionCanvasActive == false)
         {
             eventSystem.SetSelectedGameObject(m_PauseButton, new BaseEventData(eventSystem));
             Time.timeScale = 0;
@@ -59,8 +63,13 @@ public class Diary_Pause_Menu : MonoBehaviour
             PauseCanvasActive = true;
         }
 
-        if (Input.GetButton("Cancel") && PauseCanvasActive == true)
+        if (Input.GetButton("Cancel") && PauseCanvasActive == true && OptionCanvasActive == false)
         {
+            HasStarted = gameObject.GetComponentInParent<Animator>().GetBool("HasStart");
+            if(HasStarted == false)
+            {
+                eventSystem.SetSelectedGameObject(m_StartButton, new BaseEventData(eventSystem));
+            }
             Time.timeScale = 1;
             MenuPause.SetActive(false);
             PauseCanvasActive = false;
