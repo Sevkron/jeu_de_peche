@@ -97,8 +97,12 @@ Material:
         m_Texture: {fileID: 2800000, guid: de44ce06c413bf44c9820402231ffcf8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_6ED8B633_Texture:
+        m_Texture: {fileID: 2800000, guid: f6ce2d84da198ad4eba10c56058b42f1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_876A1B42_Texture:
-        m_Texture: {fileID: 2800000, guid: 500b03da76378a64aae31a54fa860a2b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8182257c42a39de48ac63f982e037979, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_8E0F98E8_Texture:
@@ -130,6 +134,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Subgraph_22D4F1AF_Texture2DD32460EE:
+        m_Texture: {fileID: 2800000, guid: 1f307953f69a76149b5fbea76d522c37, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Subgraph_9B85FBE9_Texture2D2C344374:
         m_Texture: {fileID: 2800000, guid: 1f307953f69a76149b5fbea76d522c37, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -166,7 +174,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_BF0CC1D1: -0.005
+    - Vector1_BF0CC1D1: -0.008
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
