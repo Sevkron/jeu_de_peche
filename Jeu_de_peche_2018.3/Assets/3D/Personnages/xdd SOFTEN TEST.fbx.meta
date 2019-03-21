@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: e1955e5a986528d4980bddc7dfe446e0
+guid: c891053088f5746458a6480a9e546a46
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Default_Material
+    2100000: Default_Material1
     2300000: //RootNode
     3300000: //RootNode
     4300000: mesh_topo
