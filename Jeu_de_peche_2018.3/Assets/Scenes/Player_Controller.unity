@@ -368,6 +368,18 @@ PrefabInstance:
       propertyPath: m_mainLight
       value: 
       objectReference: {fileID: 676145329}
+    - target: {fileID: 1134523467, guid: 2ec266a02326b5f42aa1629244a8a49f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134523467, guid: 2ec266a02326b5f42aa1629244a8a49f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134523467, guid: 2ec266a02326b5f42aa1629244a8a49f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 154183211123258262, guid: 2ec266a02326b5f42aa1629244a8a49f,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -520,7 +532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2135609025, guid: 2ec266a02326b5f42aa1629244a8a49f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 133.38002
+      value: 147.49998
       objectReference: {fileID: 0}
     - target: {fileID: 5270861443069400061, guid: 2ec266a02326b5f42aa1629244a8a49f,
         type: 3}
@@ -810,6 +822,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1749727305, guid: 2ec266a02326b5f42aa1629244a8a49f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2679403198948457004, guid: 2ec266a02326b5f42aa1629244a8a49f,
         type: 3}
       propertyPath: m_Material
@@ -949,6 +965,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192943643397240135, guid: 2ec266a02326b5f42aa1629244a8a49f,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9192943643397240135, guid: 2ec266a02326b5f42aa1629244a8a49f,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ec266a02326b5f42aa1629244a8a49f, type: 3}
@@ -6034,8 +6060,10 @@ MonoBehaviour:
   ButtonDiary: {fileID: 64764203}
   m_NextButton: {fileID: 64764202}
   m_PauseButton: {fileID: 64764201}
+  m_StartButton: {fileID: 0}
   MenuPause: {fileID: 0}
   PauseCanvasActive: 0
+  OptionCanvasActive: 0
 --- !u!1 &2059068691
 GameObject:
   m_ObjectHideFlags: 0

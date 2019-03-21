@@ -29,8 +29,9 @@ public class Pause_Menu : MonoBehaviour
     private GameObject Diaryscript;
 
     private bool isFullscreen;
-    private int widthResolution;
-    private int lengthResolution;
+    public Toggle m_FullcreenToggle;
+    public Resolution[] m_Resolutions;
+    public Dropdown m_ResolutionDropdown;
 
     private void Start()
     {
@@ -90,7 +91,7 @@ public class Pause_Menu : MonoBehaviour
     public void ChangeFullscreen()
     {
         isFullscreen = !isFullscreen;
-        Screen.SetResolution(widthResolution, lengthResolution, isFullscreen);
+        Screen.SetResolution(m_Resolutions., , isFullscreen);
     }
 
     public void ChangeResolution()
@@ -100,6 +101,7 @@ public class Pause_Menu : MonoBehaviour
 
     public void Quit()
     {
+        Debug.Log("Has Quit Game");
         Application.Quit();
     }
 }
