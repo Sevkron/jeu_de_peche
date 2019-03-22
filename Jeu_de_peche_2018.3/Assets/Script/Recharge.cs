@@ -18,6 +18,7 @@ public class Recharge : MonoBehaviour
         Debug.Log("Player is in");
         if (other.tag == "Player")
         {
+
             if (Input.GetButton("Interact") && isActive == false)
             {
                 isActive = true;
