@@ -14,11 +14,13 @@ public class Fear_Manager : MonoBehaviour
 
     public GameObject m_Lantern;
     private GameMaster gm;
+
     private PostProcessVolume pPVolume;
     Vignette vignette;
     private bool vignetteIsActive;
 
     public AudioMixer audioMixer;
+    private AudioSource AudioSourceAmbience;
     private AudioMixerSnapshot defaultSnapshot;
     private AudioMixerSnapshot fearSnapshot;
 
@@ -62,6 +64,7 @@ public class Fear_Manager : MonoBehaviour
         if(m_currentFearLevel >= 20 && m_currentFearLevel < 50)
         {
             defaultSnapshot.TransitionTo(2f);
+
             vignetteIsActive = true;
             vignette = ScriptableObject.CreateInstance<Vignette>();
             vignette.enabled.Override(true);
@@ -70,35 +73,35 @@ public class Fear_Manager : MonoBehaviour
             var volume = PostProcessManager.instance.QuickVolume(gameObject.layer, 100f, vignette);
             volume.weight = 0f;
 
-            //DOTween.Init();
             DOTween.Sequence()
                 .Append(DOTween.To(() => volume.weight, x => volume.weight = x, 1f, 2000f));
         }
         else if (m_currentFearLevel >= 50 && m_currentFearLevel < 75)
         {
-            this.GetComponent<CharacterController>().m_invertJoysticks = this.GetComponent<CharacterController>().m_invertJoysticksPlayerOption;
+            //this.GetComponent<CharacterController>().m_invertJoysticks = this.GetComponent<CharacterController>().m_invertJoysticksPlayerOption;
             fearSnapshot.TransitionTo(2f);
-            if (coroutineActive == true)
+            /*if (coroutineActive == true)
             {
                 StopCoroutine("InvertControls");
-            }
+            }*/
         }
         else if (m_currentFearLevel >= 75 && m_currentFearLevel < maxFear)
         {
-            coroutuneInvertControls = InvertControls(5f);
+
+            /*coroutuneInvertControls = InvertControls(5f);
             if (coroutineActive == false)
             {
                 StartCoroutine(coroutuneInvertControls);
                 coroutineActive = true;
-            }
+            }*/
         }
         else if(m_currentFearLevel >= maxFear)
         {
-            StopCoroutine("InvertControls");
+            //StopCoroutine("InvertControls");
             defaultSnapshot.TransitionTo(2f);
             //GetComponentInParent
             Debug.Log("You Dead");
-            this.GetComponent<CharacterController>().m_invertJoysticks = this.GetComponent<CharacterController>().m_invertJoysticksPlayerOption;
+            //this.GetComponent<CharacterController>().m_invertJoysticks = this.GetComponent<CharacterController>().m_invertJoysticksPlayerOption;
             gm.GetComponent<GameMaster>().Death();
         }
         else

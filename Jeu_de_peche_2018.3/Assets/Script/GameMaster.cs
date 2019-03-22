@@ -11,6 +11,10 @@ public class GameMaster : MonoBehaviour
     private Animator playerAnim;
     public GameObject m_DeathScreen;
 
+    public AudioSource m_AmbienceAudioSource;
+    public AudioClip m_NormalAmbience;
+    public AudioClip m_ScaryAmbience;
+
     private void Awake()
     {
         if( instance == null)
@@ -46,5 +50,10 @@ public class GameMaster : MonoBehaviour
         playerAnim.SetTrigger("Respawn");
         Player.GetComponent<CharacterController>().enabled = true;
         m_DeathScreen.GetComponent<Animator>().SetTrigger("DeathScreenDeactivate");
+    }
+
+    public void ChangeAmbience()
+    {
+
     }
 }
