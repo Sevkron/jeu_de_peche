@@ -36,18 +36,16 @@ public class Diary_Pause_Menu : MonoBehaviour
 
     void Update()
     {
-        
-
-        if (Input.GetButton("Diary") && DiaryCanvasActive == false && PauseCanvasActive == false && DiaryStartActive == true && OptionCanvasActive == false)
-            {
+        if(Input.GetButtonDown("Diary") && DiaryCanvasActive == false && PauseCanvasActive == false && DiaryStartActive == true && OptionCanvasActive == false)
+        {
                 eventSystem.SetSelectedGameObject(m_NextButton, new BaseEventData(eventSystem));
                 m_CanvasDiary.SetActive(true);
                 ButtonDiary.SetActive(true);
                 DiaryCanvasActive = true;
                 GetComponentInParent<CharacterController>().enabled = false;
             }
-        
-        if (Input.GetButton("Cancel") && DiaryCanvasActive == true)
+
+        else if(Input.GetButtonDown("Diary") && DiaryCanvasActive == true)
             {
                  m_CanvasDiary.SetActive(false);
                  ButtonDiary.SetActive(false);
@@ -55,7 +53,7 @@ public class Diary_Pause_Menu : MonoBehaviour
                  DiaryCanvasActive = false;
         }
 
-        if (Input.GetButton("Pause") && PauseCanvasActive == false && DiaryCanvasActive == false && OptionCanvasActive == false)
+        if(Input.GetButtonDown("Pause") && PauseCanvasActive == false && DiaryCanvasActive == false && OptionCanvasActive == false)
         {
             eventSystem.SetSelectedGameObject(m_PauseButton, new BaseEventData(eventSystem));
             Time.timeScale = 0;
@@ -63,7 +61,7 @@ public class Diary_Pause_Menu : MonoBehaviour
             PauseCanvasActive = true;
         }
 
-        if (Input.GetButton("Cancel") && PauseCanvasActive == true && OptionCanvasActive == false)
+        else if(Input.GetButtonDown("Pause") && PauseCanvasActive == true && OptionCanvasActive == false)
         {
             HasStarted = gameObject.GetComponentInParent<Animator>().GetBool("HasStart");
             if(HasStarted == false)

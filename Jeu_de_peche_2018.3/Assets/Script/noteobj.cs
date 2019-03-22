@@ -56,6 +56,7 @@ public class noteobj : MonoBehaviour
 
         DiaryButton.GetComponent<Diary_Pause_Menu>().ButtonDiary.SetActive(true);
         DiaryButton.GetComponent<Diary_Pause_Menu>().DiaryCanvasActive = true;
+
         gameObject.SetActive(false);
     }
 }
