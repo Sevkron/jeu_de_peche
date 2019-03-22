@@ -16,6 +16,10 @@ public class GameMaster : MonoBehaviour
     public AudioClip m_NormalAmbience;
     public AudioClip m_ScaryAmbience;
 
+    public GameObject EA;
+    public GameObject AX;
+
+
     private void Awake()
     {
         if( instance == null)
@@ -67,5 +71,25 @@ public class GameMaster : MonoBehaviour
             m_AmbienceAudioSource.clip = m_NormalAmbience;
             m_AmbienceAudioSource.Play();
         }
+    }
+
+    public void AfficherEA()
+    {
+        EA.SetActive(true);
+    }
+
+    public void AfficherAX()
+    {
+        AX.SetActive(true);
+    }
+    
+    public void EnleverEA()
+    {
+        EA.SetActive(false);
+    }
+
+    public void EnleverAX()
+    {
+        EA.SetActive(false);
     }
 }

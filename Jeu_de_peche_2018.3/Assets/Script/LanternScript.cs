@@ -9,12 +9,16 @@ public class LanternScript : MonoBehaviour
     public float currentLanternLight;
     private Light lanternLight;
     private float t;
-
+    private GameObject GMA;
+    private GameObject Player;
     // Start is called before the first frame update
     void Start()
     {
         lanternLight = GetComponentInChildren<Light>();
         currentLanternLight = maxLanternLight;
+        GMA = GameObject.FindGameObjectWithTag("GM");
+        Player = GameObject.FindGameObjectWithTag("Player");
+
     }
 
     // Update is called once per frame
@@ -22,6 +26,16 @@ public class LanternScript : MonoBehaviour
     {
         lanternLight.intensity = currentLanternLight;
         LightIntensity();
+
+        /*if(currentLanternLight <= 20 && Player.GetComponentInChildren<Diary_Pause_Menu>().DiaryCanvasActive ==false)
+        {
+            GMA.GetComponent<GameMaster>().AfficherAX();
+        }
+
+        else if (currentLanternLight >= 20 || Player.GetComponentInChildren<Diary_Pause_Menu>().DiaryCanvasActive == true)
+        {
+            GMA.GetComponent<GameMaster>().EnleverAX();
+        }*/
     }
 
     void LightIntensity()

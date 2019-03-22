@@ -13,6 +13,8 @@ public class noteobj : MonoBehaviour
     private bool BookActive = false;
     private bool MeshRend;
     private EventSystem eventSystem;
+    private GameObject GMA;
+
 
     private void Start()
     {
@@ -20,12 +22,18 @@ public class noteobj : MonoBehaviour
         DiaryButton = GameObject.FindGameObjectWithTag("Diary");
         Player = GameObject.FindGameObjectWithTag("Player");
         eventSystem = EventSystem.current;
+        GMA = GameObject.FindGameObjectWithTag("GM");
     }
 
     private void OnTriggerEnter(Collider other)
     {
         MeshRend = gameObject.GetComponent<Renderer>().enabled;
         BookActive = DiaryButton.GetComponent<Diary_Pause_Menu>().DiaryStartActive;
+        
+        if (other.tag == "Player" && MeshRend == true)
+        {
+            GMA.GetComponent<GameMaster>().AfficherEA();
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -39,7 +47,16 @@ public class noteobj : MonoBehaviour
             MeshRend = false;
             StartCoroutine(WaitAnimEnd());
         }
-    } 
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            GMA.GetComponent<GameMaster>().EnleverEA();
+        }
+    }
+
     IEnumerator WaitAnimEnd()
     {
         Player.GetComponent<Animator>().SetTrigger("Pickup");
@@ -57,6 +74,7 @@ public class noteobj : MonoBehaviour
         DiaryButton.GetComponent<Diary_Pause_Menu>().ButtonDiary.SetActive(true);
         DiaryButton.GetComponent<Diary_Pause_Menu>().DiaryCanvasActive = true;
 
+        GMA.GetComponent<GameMaster>().EnleverEA();
         gameObject.SetActive(false);
     }
 }
