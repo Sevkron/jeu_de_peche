@@ -48,6 +48,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lastCheckPointPos: {x: 0, y: 1, z: -1}
   deathSFX: {fileID: 8300000, guid: 1e488a623e9dda144b979a3f05d694ad, type: 3}
+  m_DeathScreen: {fileID: 0}
+  m_AmbienceAudioSource: {fileID: 8217702625500245968}
+  m_NormalAmbience: {fileID: 8300000, guid: 9a8b56d6451fa0846a743d77484790a8, type: 3}
+  m_ScaryAmbience: {fileID: 8300000, guid: 9c98f961f6d06254fb16ba5e38888efa, type: 3}
 --- !u!114 &8217702625500245974
 MonoBehaviour:
   m_ObjectHideFlags: 0

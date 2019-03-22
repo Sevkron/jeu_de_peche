@@ -11,6 +11,7 @@ public class GameMaster : MonoBehaviour
     private Animator playerAnim;
     public GameObject m_DeathScreen;
 
+    private bool isScaryAmbience;
     public AudioSource m_AmbienceAudioSource;
     public AudioClip m_NormalAmbience;
     public AudioClip m_ScaryAmbience;
@@ -26,6 +27,8 @@ public class GameMaster : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        m_AmbienceAudioSource.clip = m_NormalAmbience;
+        isScaryAmbience = false;
     }
 
     private void Start()
@@ -54,6 +57,15 @@ public class GameMaster : MonoBehaviour
 
     public void ChangeAmbience()
     {
-
+        if (isScaryAmbience == true)
+        {
+            m_AmbienceAudioSource.clip = m_ScaryAmbience;
+            m_AmbienceAudioSource.Play();
+        }
+        else
+        {
+            m_AmbienceAudioSource.clip = m_NormalAmbience;
+            m_AmbienceAudioSource.Play();
+        }
     }
 }
