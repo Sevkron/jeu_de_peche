@@ -12,6 +12,8 @@ public class PlayerAnimationEvents : MonoBehaviour
 
     public AudioClip sfxPickup;
 
+    public AudioClip sfxPlayerDeath;
+
     private AudioSource audioSource;
 
     private CharacterController characterController;
@@ -37,6 +39,12 @@ public class PlayerAnimationEvents : MonoBehaviour
     private void WaitForAnimEnd()
     {
         characterController.enabled = true;
+    }
+
+    private void SFXDeath()
+    {
+        AudioClip clip = sfxPlayerDeath;
+        audioSource.PlayOneShot(clip);
     }
 
     private void SFXPickup()
