@@ -39,8 +39,6 @@ public class CharacterController : MonoBehaviour {
     public bool m_isInTightSpace = false;
     private Vector3 m_currentDirection = Vector3.zero;
 
-    /*private float m_jumpTimeStamp = 0;
-    private float m_minJumpInterval = 0.25f;*/
     private Transform camera;
 
     private bool m_isGrounded;
@@ -57,6 +55,8 @@ public class CharacterController : MonoBehaviour {
     private float TorchMovementH;
     private float MinMaxRangeV;
     private float MinMaxRangeH;
+
+    public bool hasMcGuffin = false;
 
     /*private void OnCollisionEnter(Collision collision)
     {
@@ -222,30 +222,8 @@ public class CharacterController : MonoBehaviour {
         }
 
         UseCombustible();
-        //JumpingAndLanding();
         //Light();
     }
-
-    /*private void JumpingAndLanding()
-    {
-        bool jumpCooldownOver = (Time.time - m_jumpTimeStamp) >= m_minJumpInterval;
-
-        if (jumpCooldownOver && m_isGrounded && Input.GetKey(KeyCode.Space))
-        {
-            m_jumpTimeStamp = Time.time;
-            m_rigidBody.AddForce(Vector3.up * m_jumpForce, ForceMode.Impulse);
-        }
-
-        if (!m_wasGrounded && m_isGrounded)
-        {
-            m_animator.SetTrigger("Land");
-        }
-
-        if (!m_isGrounded && m_wasGrounded)
-        {
-            m_animator.SetTrigger("Jump");
-        }
-    }*/
 
     public void UseCombustible()
     {

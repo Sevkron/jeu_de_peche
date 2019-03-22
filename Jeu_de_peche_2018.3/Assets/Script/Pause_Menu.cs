@@ -91,7 +91,7 @@ public class Pause_Menu : MonoBehaviour
     public void ChangeFullscreen()
     {
         isFullscreen = !isFullscreen;
-        Screen.SetResolution(m_Resolutions., , isFullscreen);
+        //Screen.SetResolution(m_Resoluti, , isFullscreen);
     }
 
     public void ChangeResolution()
