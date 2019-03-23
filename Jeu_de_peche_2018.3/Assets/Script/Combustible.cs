@@ -7,6 +7,7 @@ public class Combustible : MonoBehaviour
     private bool MeshRend;
     private GameObject Player;
     private GameObject GMA;
+    private IEnumerator CBUI;
 
     private void Start()
     {
@@ -46,10 +47,15 @@ public class Combustible : MonoBehaviour
         Player.GetComponent<Animator>().SetTrigger("Pickup");
         Player.GetComponent<CharacterController>().enabled = false;
         yield return new WaitForSecondsRealtime(2.7f);
-        gameObject.SetActive(false);
         Player.transform.GetComponent<CharacterController>().combustibleNum++;
         Player.transform.GetComponent<CharacterController>().UpdateCombustibleNum();
         Player.GetComponent<CharacterController>().enabled = true;
         GMA.GetComponent<GameMaster>().EnleverEA();
+        CBUI = Player.GetComponent<CharacterController>().CombustibleUI();
+        gameObject.GetComponent<MeshRenderer>().enabled = false;
+        gameObject.GetComponent<Collider>().enabled = false;
+        StartCoroutine(CBUI);
+        yield return new WaitForSecondsRealtime(3);
+        gameObject.SetActive(false);
     }
 }

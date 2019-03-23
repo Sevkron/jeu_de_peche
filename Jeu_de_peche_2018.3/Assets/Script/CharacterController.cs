@@ -49,7 +49,7 @@ public class CharacterController : MonoBehaviour {
     private bool maxLampUp, maxLampDown;
     public int combustibleNum = 0;
     public Text m_UICombustible;
-    public GameObject Bol;
+    public GameObject GroupeCombustibleText;
     private bool LanternActive;
 
     private float TorchMovementV;
@@ -230,10 +230,7 @@ public class CharacterController : MonoBehaviour {
     {
         if(Input.GetButtonDown("Consumable") && combustibleNum > 0 && LanternActive == true)
         {
-            m_Lantern.GetComponent<LanternScript>().AddLightIntensity();
-            combustibleNum--;
-            UpdateCombustibleNum();
-            Bol.SetActive(true);
+            StartCoroutine(CombustibleUI());
         }
     }
 
@@ -248,5 +245,15 @@ public class CharacterController : MonoBehaviour {
     public void UpdateCombustibleNum()
     {
         m_UICombustible.text = "" + combustibleNum;
+    }
+
+    public IEnumerator CombustibleUI()
+    {
+        GroupeCombustibleText.SetActive(true);
+        m_Lantern.GetComponent<LanternScript>().AddLightIntensity();
+        combustibleNum--;
+        UpdateCombustibleNum();
+        yield return new WaitForSecondsRealtime(3);
+        GroupeCombustibleText.SetActive(false);
     }
 }
