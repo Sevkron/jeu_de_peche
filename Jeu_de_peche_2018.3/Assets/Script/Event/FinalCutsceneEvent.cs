@@ -8,6 +8,7 @@ public class FinalCutsceneEvent : MonoBehaviour
 {
     [SerializeField]
     private PlayableAsset GoodEndingCutscene;
+    [SerializeField]
     private PlayableAsset BadEndingCutscene;
 
     private PlayableDirector DirectorFinalCutscene;
