@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class MenuScript : MonoBehaviour
 {
 
-    public void PlayButton(string Level1)
+    public void PlayButton()
     {
-        SceneManager.LoadScene(Level1);
+        SceneManager.LoadScene("Main_Scene");
     }
 
    
