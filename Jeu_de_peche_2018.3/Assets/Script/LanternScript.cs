@@ -27,15 +27,15 @@ public class LanternScript : MonoBehaviour
         lanternLight.intensity = currentLanternLight;
         LightIntensity();
 
-        /*if(currentLanternLight <= 20 && Player.GetComponentInChildren<Diary_Pause_Menu>().DiaryCanvasActive ==false)
+        if (currentLanternLight <= 20 && Player.GetComponentInChildren<Diary_Pause_Menu>().DiaryCanvasActive == false)
         {
             GMA.GetComponent<GameMaster>().AfficherAX();
         }
 
-        else if (currentLanternLight >= 20 || Player.GetComponentInChildren<Diary_Pause_Menu>().DiaryCanvasActive == true)
+        else if (currentLanternLight >= 20)
         {
             GMA.GetComponent<GameMaster>().EnleverAX();
-        }*/
+        }
     }
 
     void LightIntensity()

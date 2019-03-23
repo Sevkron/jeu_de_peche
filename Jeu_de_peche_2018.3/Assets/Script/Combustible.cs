@@ -17,18 +17,14 @@ public class Combustible : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         MeshRend = gameObject.GetComponent<MeshRenderer>().enabled;
-        
-        if (other.tag == "Player" && MeshRend == true)
-        {
-            GMA.GetComponent<GameMaster>().AfficherEA();
-        }
     }
 
     private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player" && MeshRend == true)
         {
-            
+            GMA.GetComponent<GameMaster>().AfficherEA();
+
             if (Input.GetButton("Interact"))
             {
                 MeshRend = false;

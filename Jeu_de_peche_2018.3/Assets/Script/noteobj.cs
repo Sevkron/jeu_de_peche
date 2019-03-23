@@ -29,23 +29,21 @@ public class noteobj : MonoBehaviour
     {
         MeshRend = gameObject.GetComponent<Renderer>().enabled;
         BookActive = DiaryButton.GetComponent<Diary_Pause_Menu>().DiaryStartActive;
-        
-        if (other.tag == "Player" && MeshRend == true)
-        {
-            GMA.GetComponent<GameMaster>().AfficherEA();
-        }
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Player" && Input.GetButton("Interact") && MeshRend == true)
+        if (other.tag == "Player" && MeshRend == true)
         {
-            if(BookActive == false)
-            {
-                DiaryButton.GetComponent<Diary_Pause_Menu>().DiaryStartActive = true;
+            GMA.GetComponent<GameMaster>().AfficherEA();
+            if (Input.GetButton("Interact")){
+                if (BookActive == false)
+                {
+                    DiaryButton.GetComponent<Diary_Pause_Menu>().DiaryStartActive = true;
+                }
+                MeshRend = false;
+                StartCoroutine(WaitAnimEnd());
             }
-            MeshRend = false;
-            StartCoroutine(WaitAnimEnd());
         }
     }
 
