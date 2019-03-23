@@ -108,10 +108,10 @@ MonoBehaviour:
     m_Value: 0
   exposure:
     m_OverrideState: 1
-    m_Value: -4.16
+    m_Value: 0.15
   multiplier:
     m_OverrideState: 1
-    m_Value: 0.03
+    m_Value: 0.3
     min: 0
   upperHemisphereLuxValue:
     m_OverrideState: 1
@@ -132,12 +132,12 @@ MonoBehaviour:
     m_Value: 0
   sunSize:
     m_OverrideState: 1
-    m_Value: 0.047
+    m_Value: 0.052
     min: 0
     max: 1
   sunSizeConvergence:
     m_OverrideState: 1
-    m_Value: 2.65
+    m_Value: 2.55
     min: 1
     max: 10
   atmosphereThickness:
