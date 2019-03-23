@@ -2521,6 +2521,7 @@ MonoBehaviour:
   p_index: 0
   SFXSelected: {fileID: 8300000, guid: 3b2ce9e16078fb04ab5b53b52702bf00, type: 3}
   SFXValidated: {fileID: 8300000, guid: 664002bd4bd1c1548ac78ccadcbc3af7, type: 3}
+  SFXPage: {fileID: 8300000, guid: 4b3d46eb40043c541911eed3a14cffc0, type: 3}
 --- !u!82 &294028663161809806
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13364,7 +13365,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 6286500289659164314}
-          m_MethodName: PlaySoundValidated
+          m_MethodName: PlaySoundPage
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -13580,7 +13581,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 6286500289659164314}
-          m_MethodName: PlaySoundValidated
+          m_MethodName: PlaySoundPage
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

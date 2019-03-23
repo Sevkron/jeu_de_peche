@@ -25,6 +25,7 @@ public class Journal_test_Leo : MonoBehaviour
 
     public AudioClip SFXSelected;
     public AudioClip SFXValidated;
+    public AudioClip SFXPage;
     private AudioSource UiAudioSource;
 
 
@@ -90,5 +91,9 @@ public class Journal_test_Leo : MonoBehaviour
         UiAudioSource.PlayOneShot(SFXValidated);
     }
 
+    public void PlaySoundPage()
+    {
+        UiAudioSource.PlayOneShot(SFXPage);
+    }
 
 }
