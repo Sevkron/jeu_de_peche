@@ -49,6 +49,7 @@ public class CharacterController : MonoBehaviour {
     private bool maxLampUp, maxLampDown;
     public int combustibleNum = 0;
     public Text m_UICombustible;
+    public GameObject Bol;
     private bool LanternActive;
 
     private float TorchMovementV;
@@ -232,6 +233,7 @@ public class CharacterController : MonoBehaviour {
             m_Lantern.GetComponent<LanternScript>().AddLightIntensity();
             combustibleNum--;
             UpdateCombustibleNum();
+            Bol.SetActive(true);
         }
     }
 
