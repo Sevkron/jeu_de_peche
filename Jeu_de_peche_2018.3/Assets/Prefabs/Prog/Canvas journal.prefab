@@ -2063,8 +2063,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 155, y: -122.97}
-  m_SizeDelta: {x: 575.6, y: 335.76}
+  m_AnchoredPosition: {x: 144.17, y: -88.24}
+  m_SizeDelta: {x: 553.93, y: 266.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1475247423513016439
 CanvasRenderer:
@@ -5092,7 +5092,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0000076294, y: 0.000029564}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0.000061035}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7645353752629503771
@@ -5282,7 +5282,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1907877567758034784}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.04630584, w: 0.99892735}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5290,10 +5290,10 @@ RectTransform:
   - {fileID: 8237731560501763573}
   m_Father: {fileID: 800088468416197066}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.308}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 15, y: 29}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1924652461577926558
@@ -7342,8 +7342,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.2, y: 2.01}
-  m_SizeDelta: {x: 283.41, y: 124.36}
+  m_AnchoredPosition: {x: -0.03, y: 2.01}
+  m_SizeDelta: {x: 318.47, y: 124.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2319072142818247771
 CanvasRenderer:
@@ -7373,7 +7373,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0e07709975e29f5488b08fc5d12760f9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b7ecccd3f8124fa4ca62ae896c51380f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7416,8 +7416,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 54.84, y: 9.1}
-  m_SizeDelta: {x: 372.67, y: 143.55}
+  m_AnchoredPosition: {x: 55.77, y: 16.9}
+  m_SizeDelta: {x: 374.54, y: 112.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8410311233319528061
 CanvasRenderer:
@@ -7447,7 +7447,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0e07709975e29f5488b08fc5d12760f9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 54d07cd5f8b3ac74b989af3b6bde1220, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7688,7 +7688,7 @@ GameObject:
   - component: {fileID: 3414512111954668300}
   - component: {fileID: 574878618520057799}
   m_Layer: 5
-  m_Name: TMP SubMeshUI [WhiteAngelica SDF Material + LiberationSans SDF Atlas]
+  m_Name: TMP SubMeshUI [IndieFlower SDF Material + LiberationSans SDF Atlas]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7895,7 +7895,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 157.5, y: -333.58}
+  m_AnchoredPosition: {x: 157.5, y: -298.8}
   m_SizeDelta: {x: 545.5, y: 166.45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5329207158723629362
@@ -8965,9 +8965,9 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: "I\u2019ve been having the same dream every night for months now. I\u2019m
-    pulling a huge cartful of bodies.\r\n\tI clearly recognize the village. But was
-    it from the past ? Now I think of it, can\u2019t my memory only go back just a
-    couple of years ?\r\n\tMy childhood, where has it gone ? \n                   I
+    pulling a huge cartful of bodies.\r\n\tI clearly recognize the village. \nBut
+    was it from the past ? Now I think of it, can\u2019t my memory only go back just
+    a couple of years ?\r\n\tMy childhood, where has it gone ? \n                    I
     must remember again soon.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d8af785dc419f11478fe9c4917ec30b1, type: 2}
@@ -9015,7 +9015,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 179
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -9035,12 +9035,12 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -316.73523, w: -108.48065}
+  m_margin: {x: 0, y: 0, z: -310.1388, w: -228.87476}
   m_textInfo:
     textComponent: {fileID: 0}
-    characterCount: 318
+    characterCount: 320
     spriteCount: 0
-    spaceCount: 81
+    spaceCount: 83
     wordCount: 56
     linkCount: 0
     lineCount: 9
@@ -11133,7 +11133,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00030517578, y: 10.7}
+  m_AnchoredPosition: {x: -0.00030517578, y: 33.93744}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2368807264289904140
@@ -11164,7 +11164,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: The one who dominates the lake ? What does it means ?
+  m_text: "The one who dominates the lake ? \n     What does it means ?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5442471ad6ca9784899e30c96fcfea45, type: 2}
   m_sharedMaterial: {fileID: 21833057676555928, guid: 5442471ad6ca9784899e30c96fcfea45,
@@ -11234,9 +11234,9 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -112.44892, w: -108.48065}
   m_textInfo:
     textComponent: {fileID: 0}
-    characterCount: 53
+    characterCount: 59
     spriteCount: 0
-    spaceCount: 11
+    spaceCount: 17
     wordCount: 10
     linkCount: 0
     lineCount: 2
@@ -13694,7 +13694,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5977869763893874674}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.07026511, w: 0.9975284}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -13702,10 +13702,10 @@ RectTransform:
   - {fileID: 8426310061327009091}
   m_Father: {fileID: 6985171451831488221}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 8.058001}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -43, y: -14}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6069548266720027655
@@ -14600,7 +14600,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -285}
+  m_AnchoredPosition: {x: 0, y: -250.22003}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6516519124986666101
@@ -15851,10 +15851,11 @@ MonoBehaviour:
   m_text: "Darling,\r\n\tYour father and I are off to the weekly mass. Once you\u2019re
     awake, please do come join us. It\u2019s the village\u2019s anniversary tonight,
     it would be a shame if you missed it. Anyways you\u2019re old enough to take care
-    of yourself, no ?\r\n\tLove,\r\n\tMama and Papa\r\n"
+    of yourself, no ?\r\n\t                   Love,\r\n\t                   Mama and
+    Papa\r\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: d8af785dc419f11478fe9c4917ec30b1, type: 2}
-  m_sharedMaterial: {fileID: 21392863279906580, guid: d8af785dc419f11478fe9c4917ec30b1,
+  m_fontAsset: {fileID: 11400000, guid: e25a7e3bf17abaa45bfe53d002a68b45, type: 2}
+  m_sharedMaterial: {fileID: 21475580994304532, guid: e25a7e3bf17abaa45bfe53d002a68b45,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -15898,7 +15899,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 244
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -15921,12 +15922,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -313.30136, w: -198.71387}
   m_textInfo:
     textComponent: {fileID: 0}
-    characterCount: 260
+    characterCount: 298
     spriteCount: 0
-    spaceCount: 51
+    spaceCount: 89
     wordCount: 47
     linkCount: 0
-    lineCount: 9
+    lineCount: 8
     pageCount: 1
     materialCount: 2
   m_havePropertiesChanged: 0
