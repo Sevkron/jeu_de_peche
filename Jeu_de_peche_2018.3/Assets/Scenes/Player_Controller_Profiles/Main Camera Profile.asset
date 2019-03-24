@@ -124,13 +124,13 @@ MonoBehaviour:
     value: 112
   lift:
     overrideState: 1
-    value: {x: 0.97314715, y: 1, z: 1, w: 0}
+    value: {x: 0.59574497, y: 0.2822966, z: 1, w: 0}
   gamma:
     overrideState: 1
-    value: {x: 1, y: 0.92695206, z: 0.94777405, w: 0}
+    value: {x: 1, y: 0.99142784, z: 0.99558526, w: -0.4192547}
   gain:
     overrideState: 1
-    value: {x: 1, y: 0.95805436, z: 0.993145, w: 0}
+    value: {x: 0.9878874, y: 0.995573, z: 1, w: 0}
   masterCurve:
     overrideState: 1
     value:
@@ -1343,7 +1343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d65e486e4de6e5448a8fbb43dc8756a0, type: 3}
   m_Name: Grain
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 0
@@ -1380,7 +1380,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 4
+    value: 0.66
   color:
     overrideState: 1
     value: {r: 0, g: 0, b: 0, a: 1}
@@ -1398,10 +1398,10 @@ MonoBehaviour:
     value: -12
   thicknessModifier:
     overrideState: 1
-    value: 2.57
+    value: 2.71
   directLightingStrength:
     overrideState: 1
-    value: 0.196
+    value: 0.599
   radius:
     overrideState: 0
     value: 0.25
@@ -1420,7 +1420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b94fcd11afffcb142908bfcb1e261fba, type: 3}
   m_Name: MotionBlur
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
@@ -1442,7 +1442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3f6f3f7c722b4544b97e3c75840aa33, type: 3}
   m_Name: AutoExposure
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 0
@@ -1479,19 +1479,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
     value: 1
   intensity:
     overrideState: 1
-    value: 5.34
+    value: 134.2
   threshold:
     overrideState: 1
     value: 0.51
   softKnee:
     overrideState: 1
-    value: 0.36
+    value: 0.563
   clamp:
     overrideState: 1
     value: 65460.96
@@ -1526,10 +1526,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b924e2dad56384a8df2a1e111bb675, type: 3}
   m_Name: Vignette
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   enabled:
     overrideState: 1
-    value: 1
+    value: 0
   mode:
     overrideState: 1
     value: 0
@@ -1541,7 +1541,7 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0
+    value: 0.044
   smoothness:
     overrideState: 1
     value: 1
