@@ -1730,7 +1730,17 @@ ModelImporter:
     13700014: shoes
     13700016: shoes_border
     13700018: skirt
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: 13aa79a4f0404a946a9beb3b61c16a37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_lambert2
+    second: {fileID: 2100000, guid: 13aa79a4f0404a946a9beb3b61c16a37, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

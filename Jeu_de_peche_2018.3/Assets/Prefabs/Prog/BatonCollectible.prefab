@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!136 &88494899
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2164471421163836797}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.07784977
+  m_Height: 0.25429496
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.09, z: 0}
+--- !u!114 &88494900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2164471421163836797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f76efe33bcb4d94a90a66b71cb42a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &2164471421543655328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2164471421543655334}
+  m_Layer: 0
+  m_Name: BatonCollectible
+  m_TagString: Object
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2164471421543655334
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2164471421543655328}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 528.6839, y: 44.3472, z: -10.293533}
+  m_LocalScale: {x: 40, y: 40, z: 40}
+  m_Children:
+  - {fileID: 2164471421163735389}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2164471421163869149
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2164471421543655334}
+    m_Modifications:
+    - target: {fileID: 100000, guid: ac86cad70f370aa4888fe1fe4b367b11, type: 3}
+      propertyPath: m_Name
+      value: baton
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ac86cad70f370aa4888fe1fe4b367b11, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5397507
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ac86cad70f370aa4888fe1fe4b367b11, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.011499978
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ac86cad70f370aa4888fe1fe4b367b11, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02650013
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ac86cad70f370aa4888fe1fe4b367b11, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.08328288
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ac86cad70f370aa4888fe1fe4b367b11, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70168626
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ac86cad70f370aa4888fe1fe4b367b11, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.08316299
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ac86cad70f370aa4888fe1fe4b367b11, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7026979
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ac86cad70f370aa4888fe1fe4b367b11, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ac86cad70f370aa4888fe1fe4b367b11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 13.518001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ac86cad70f370aa4888fe1fe4b367b11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.91701
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ac86cad70f370aa4888fe1fe4b367b11, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: ac86cad70f370aa4888fe1fe4b367b11, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ae99fd494e8ffe43a70d408fa2a63d3, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ac86cad70f370aa4888fe1fe4b367b11, type: 3}
+--- !u!1 &2164471421163836797 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: ac86cad70f370aa4888fe1fe4b367b11,
+    type: 3}
+  m_PrefabInstance: {fileID: 2164471421163869149}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2164471421163735389 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: ac86cad70f370aa4888fe1fe4b367b11,
+    type: 3}
+  m_PrefabInstance: {fileID: 2164471421163869149}
+  m_PrefabAsset: {fileID: 0}
