@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Fishing Team
-  productName: Jeu_de_peche_2018.3
+  productName: At the Lake's Edge
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -108,9 +108,9 @@ PlayerSettings:
   switchQueueCommandMemory: 0
   vulkanEnableSetSRGBWrite: 0
   m_SupportedAspectRatios:
-    4:3: 1
-    5:4: 1
-    16:10: 1
+    4:3: 0
+    5:4: 0
+    16:10: 0
     16:9: 1
     Others: 1
   bundleVersion: 0.1
@@ -250,12 +250,13 @@ PlayerSettings:
     height: 180
     banner: {fileID: 0}
   androidGamepadSupportLevel: 0
-  resolutionDialogBanner: {fileID: 0}
+  resolutionDialogBanner: {fileID: 2800000, guid: 49e632cf8e936eb42a8a7a20111a7e2c,
+    type: 3}
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 024aa76752c92a5449a8801c599e1efd, type: 3}
+      m_Icon: {fileID: 2800000, guid: 49e632cf8e936eb42a8a7a20111a7e2c, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
