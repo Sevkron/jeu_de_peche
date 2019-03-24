@@ -26,7 +26,7 @@ public class TightSpace : MonoBehaviour
             player = other.gameObject;
             player.GetComponent<CharacterController>().enabled = false;
             //player.GetComponent<Animator>().enabled = false;
-            GOPlayerPos.SetActive(true);
+            GOPlayerPos.GetComponent<PlayerCinematicOverride>().enabled = true;
             //GOPlayerPos.GetComponent<PlayerCinematicOverride>().Player = player;
             betweenTwoWalls.Play();
         }
@@ -36,7 +36,7 @@ public class TightSpace : MonoBehaviour
         if (other.tag == "Player")
         {
             player.GetComponent<CharacterController>().enabled = true;
-            GOPlayerPos.SetActive(false);
+            GOPlayerPos.GetComponent<PlayerCinematicOverride>().enabled = false;
             //player.GetComponent<Animator>().enabled = true;
         }
     }
