@@ -10,6 +10,7 @@ public class FinalCutsceneEvent : MonoBehaviour
     public PlayableAsset GoodEndingCutscene;
     public PlayableAsset BadEndingCutscene;
     private PlayableDirector DirectorFinalCutscene;
+    private bool hasMcGuffin = false;
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
@@ -17,9 +18,8 @@ public class FinalCutsceneEvent : MonoBehaviour
         {
             DirectorFinalCutscene = this.gameObject.GetComponent<PlayableDirector>();
             var Player = other.gameObject.GetComponent<CharacterController>();
-            var hasMcGuffin = Player.hasMcGuffin;
             Player.enabled = false;
-            if(Player.hasMcGuffin == true)
+            if(Player.hasMcGuffin = !hasMcGuffin)
             {
                 DirectorFinalCutscene.Play(GoodEndingCutscene);
                 Player.transform.position = this.transform.position;
