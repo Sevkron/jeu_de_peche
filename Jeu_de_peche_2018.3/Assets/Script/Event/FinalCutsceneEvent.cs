@@ -6,17 +6,16 @@ using UnityEngine.Timeline;
 
 public class FinalCutsceneEvent : MonoBehaviour
 {
-    [SerializeField]
-    private PlayableAsset GoodEndingCutscene;
-    [SerializeField]
-    private PlayableAsset BadEndingCutscene;
 
+    public PlayableAsset GoodEndingCutscene;
+    public PlayableAsset BadEndingCutscene;
     private PlayableDirector DirectorFinalCutscene;
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")
         {
+            DirectorFinalCutscene = this.gameObject.GetComponent<PlayableDirector>();
             var Player = other.gameObject.GetComponent<CharacterController>();
             var hasMcGuffin = Player.hasMcGuffin;
             Player.enabled = false;

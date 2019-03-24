@@ -7,6 +7,6 @@ public class Credits : MonoBehaviour
 {
     public void LoadCredits()
     {
-        SceneManager.LoadScene("Credits");
+        SceneManager.LoadScene("Main_Credits");
     }
 }
