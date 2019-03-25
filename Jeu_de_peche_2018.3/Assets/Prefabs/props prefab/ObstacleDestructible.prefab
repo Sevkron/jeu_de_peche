@@ -172,7 +172,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5897104400706776389}
-  - component: {fileID: 5168472895758156777}
   m_Layer: 0
   m_Name: toxic seaweed (1)
   m_TagString: Untagged
@@ -196,19 +195,6 @@ Transform:
   m_Father: {fileID: 1190003153356384504}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5168472895758156777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 8270548521582031879, guid: f7f0fc788478f23449929760a4c5bff0,
-    type: 3}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 716287223428446137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da112cfc7cc4f8440a44e8e4d9cba10b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &832993466834814761
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,7 +286,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6050818754893306712}
-  - component: {fileID: 5013755546919810548}
   m_Layer: 0
   m_Name: toxic seaweed (6)
   m_TagString: Untagged
@@ -324,19 +309,6 @@ Transform:
   m_Father: {fileID: 1190003153356384504}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5013755546919810548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 8135909560741102106, guid: f7f0fc788478f23449929760a4c5bff0,
-    type: 3}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 855307635836092836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da112cfc7cc4f8440a44e8e4d9cba10b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1313817930469625185
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,7 +319,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5340675595446589341}
-  - component: {fileID: 6661184119970625841}
   m_Layer: 0
   m_Name: toxic seaweed (3)
   m_TagString: Untagged
@@ -371,19 +342,6 @@ Transform:
   m_Father: {fileID: 1190003153356384504}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6661184119970625841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 7569910037891731167, guid: f7f0fc788478f23449929760a4c5bff0,
-    type: 3}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1313817930469625185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da112cfc7cc4f8440a44e8e4d9cba10b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1655892989512004581
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,7 +567,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2110956607190519213}
-  - component: {fileID: 803677423718212353}
   m_Layer: 0
   m_Name: toxic seaweed (4)
   m_TagString: Untagged
@@ -633,19 +590,6 @@ Transform:
   m_Father: {fileID: 1190003153356384504}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &803677423718212353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 4493399335506580719, guid: f7f0fc788478f23449929760a4c5bff0,
-    type: 3}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5002907114461828945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da112cfc7cc4f8440a44e8e4d9cba10b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5121232459466729409
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,7 +681,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1421838480479825987}
-  - component: {fileID: 421017376953753327}
   m_Layer: 0
   m_Name: toxic seaweed (2)
   m_TagString: Untagged
@@ -761,19 +704,6 @@ Transform:
   m_Father: {fileID: 1190003153356384504}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &421017376953753327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 3506966736328550657, guid: f7f0fc788478f23449929760a4c5bff0,
-    type: 3}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5448538382716398271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da112cfc7cc4f8440a44e8e4d9cba10b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5750566976326082510
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,7 +714,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1722737257239889202}
-  - component: {fileID: 109432099781356446}
   m_Layer: 0
   m_Name: toxic seaweed (7)
   m_TagString: Untagged
@@ -808,19 +737,6 @@ Transform:
   m_Father: {fileID: 1190003153356384504}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &109432099781356446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 3816863711132327024, guid: f7f0fc788478f23449929760a4c5bff0,
-    type: 3}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5750566976326082510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da112cfc7cc4f8440a44e8e4d9cba10b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6122913967683577401
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,7 +747,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927336396825427141}
-  - component: {fileID: 1923648405346882153}
   m_Layer: 0
   m_Name: toxic seaweed (5)
   m_TagString: Untagged
@@ -855,19 +770,6 @@ Transform:
   m_Father: {fileID: 1190003153356384504}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1923648405346882153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 3444922421580375431, guid: f7f0fc788478f23449929760a4c5bff0,
-    type: 3}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6122913967683577401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da112cfc7cc4f8440a44e8e4d9cba10b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6690406024375098649
 GameObject:
   m_ObjectHideFlags: 0
