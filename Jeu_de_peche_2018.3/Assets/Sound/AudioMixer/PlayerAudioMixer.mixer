@@ -31,6 +31,7 @@ AudioMixerController:
     - 509062e86e7e0e34cbd3c012345a2f95
     - 5f49cd36a9638d44682c70491d10297b
     - 98dc4c0b9daef164db8f2b8a40a43f61
+    - 877d6a46ba82c8f4ca335261076fb818
     name: All
   - guids:
     - 64dc901bb225b234989013ddc7e9b808
@@ -121,7 +122,8 @@ AudioMixerGroupController:
   m_Name: Ambience
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: fd06731956dfd7c458a26fcdccd57458
-  m_Children: []
+  m_Children:
+  - {fileID: 243415239179966336}
   m_Volume: dbb2211333218084aa1099878dddf873
   m_Pitch: 14a0dce9e8ef2b947a1ab6701adc99ea
   m_Effects:
@@ -181,6 +183,24 @@ AudioMixerGroupController:
   m_Effects:
   - {fileID: 244329810827921656}
   m_UserColorIndex: 3
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243415239179966336
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Snow
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 877d6a46ba82c8f4ca335261076fb818
+  m_Children: []
+  m_Volume: d400824ffd17aa142b84c05776d9fe86
+  m_Pitch: ab093a308568e6f439090481694176c4
+  m_Effects:
+  - {fileID: 244827323216668582}
+  m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
@@ -300,6 +320,20 @@ AudioMixerEffectController:
   m_EffectID: e203385ed1e3fb44fa338602a1abaccd
   m_EffectName: Attenuation
   m_MixLevel: d8e8cade0e589864395c92917c70d8d8
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244827323216668582
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 34318492176a05a4189c1703327fd47d
+  m_EffectName: Attenuation
+  m_MixLevel: 9af758dd5107995468b7cb5a830182f6
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0

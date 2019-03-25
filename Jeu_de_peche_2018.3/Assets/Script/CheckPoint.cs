@@ -6,6 +6,8 @@ public class CheckPoint : MonoBehaviour
 {
     private GameMaster gm;
     private ParticleSystem Sparkle;
+    public AudioClip m_AudioBell;
+    private AudioSource SFx;
 
     void Start()
     {
@@ -24,6 +26,7 @@ public class CheckPoint : MonoBehaviour
             }
             gm.lastCheckPointPos = transform.position;
             Sparkle.Play();
+            SFx.PlayOneShot(m_AudioBell);
         }
     }
 }
