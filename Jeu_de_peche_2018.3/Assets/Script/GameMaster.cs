@@ -19,10 +19,14 @@ public class GameMaster : MonoBehaviour
     public GameObject EA;
     public GameObject AX;
 
+    [SerializeField]
+    public CursorMode m_cursorMode = CursorMode.Auto;
+    public Vector2 m_hotSpot = Vector2.zero;
 
     private void Awake()
     {
-        if( instance == null)
+        Cursor.SetCursor(null, Vector2.zero, m_cursorMode);
+        if ( instance == null)
         {
             instance = this;
             DontDestroyOnLoad(instance);
